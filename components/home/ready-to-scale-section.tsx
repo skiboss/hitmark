@@ -9,7 +9,7 @@ export default function ReadyToScaleSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section ref={ref} className="py-20 px-4 bg-[#FAFAFA] relative overflow-hidden">
+    <section ref={ref} className="py-20 px-4 md:bg-[url('../../ready-bg.png')] bg-[#FAFAFA] relative overflow-hidden">
       {/* Background decorative elements */}
       <motion.div
         animate={{
@@ -34,7 +34,7 @@ export default function ReadyToScaleSection() {
         className="absolute bottom-10 left-10 w-24 h-24 bg-blue-200 rounded-full opacity-30"
       />
 
-      <div className="container mx-auto text-center max-w-4xl relative z-10">
+      <div className="container mx-auto text-center max-w-4xl bg-[url(../../ready-bg.png)] relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
