@@ -9,7 +9,7 @@ export default function ReadyToScaleSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section ref={ref} className="py-20 px-4 bg-[url('../../ready-bg.png')] bg-[#FAFAFA] relative overflow-hidden">
+    <section ref={ref} className="py-20 px-4 bg-[#FAFAFA] relative overflow-hidden">
       {/* Background decorative elements */}
       <motion.div
         animate={{
