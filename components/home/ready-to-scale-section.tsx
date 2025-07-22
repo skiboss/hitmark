@@ -33,7 +33,7 @@ export default function ReadyToScaleSection() {
         }}
         className="absolute bottom-10 left-10 w-24 h-24 bg-blue-200 rounded-full opacity-30"
       />
-      <div className="absolute inset-0 bg-[url(../../ready-bg.png)]" />
+      <div className="absolute inset-0 bg-[url('/ready-bg.png')]" />
       <div className="container mx-auto text-center max-w-4xl  relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
