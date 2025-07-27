@@ -16,6 +16,7 @@ export default function TestimonialsSection() {
       role: "Head of Growth",
       content: "Finally, an agency that works at our pace. Smart strategy, clean execution, and zero wasted motion.",
       rating: 5,
+      imgSrc: "testimonial1"
     },
     {
       name: "Lena, @ Arva",
@@ -23,12 +24,14 @@ export default function TestimonialsSection() {
       content:
         "Hitmark tripled our qualified leads in under 60 days. No fluff, just focused strategy that delivered real results.",
       rating: 5,
+      imgSrc: "testimonial2"
     },
     {
       name: "David, @ Meiswift",
       role: "Co-Founder",
       content: "We hit a 4.6x ROAS in the first month. Their team knew exactly how to scale without burning budget.",
       rating: 5,
+      imgSrc: "testimonial3"
     },
   ]
 
@@ -49,14 +52,13 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="inline-block bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-block bg-[#FBFBFB] text-gray-900 px-6 py-2 rounded-full text-md font-medium mb-6 drop-shadow-lg">
             Our Success Stories
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Don't Take Our Word For It,</h2>
-          <p className="text-3xl md:text-4xl font-bold text-gray-900">Hear From Our Clients</p>
+          <h2 className="text-3xl md:text-5xl font-medium md:w-1/2 md:mx-auto text-gray-900 mb-4">Don't Take Our Word For It, Hear From Our Clients</h2>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {testimonials.map((testimonial, index) => (
               <motion.div
@@ -75,8 +77,8 @@ export default function TestimonialsSection() {
                 </div>
                 <p className="text-gray-600 mb-4 text-sm leading-relaxed">"{testimonial.content}"</p>
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                    {testimonial.name.charAt(0)}
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center">
+                    <img src={`/images/${testimonial.imgSrc}.png`} alt={`${testimonial.imgSrc} image`}/>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm">{testimonial.name}</p>

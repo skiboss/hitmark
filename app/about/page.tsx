@@ -1,10 +1,21 @@
+import AboutHeroSection from "@/components/about/about-hero-section"
+import WhyBrandsSection from "@/components/home/why-brands-section"
+import WhatMakesUsDifferentSection from "@/components/about/what-makes-us-different-section"
+import OurValuesSection from "@/components/about/our-values-section"
+import EnhancedBackground from "@/components/enhanced-background"
+import ClientAboutPage from "@/components/client-about-page"
+import ReadyToScaleSection from "@/components/home/ready-to-scale-section"
+
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-4 py-20">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">About Hitmark Digital</h1>
-        <p className="text-xl text-gray-600">Coming soon...</p>
-      </div>
-    </div>
+    <ClientAboutPage>
+      <EnhancedBackground />
+      <AboutHeroSection />
+      <WhatMakesUsDifferentSection />
+      <WhyBrandsSection />
+      <OurValuesSection />
+      <ReadyToScaleSection />
+    </ClientAboutPage>
   )
 }
+

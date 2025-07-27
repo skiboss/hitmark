@@ -5,7 +5,7 @@ import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import ScrollProgress from "@/components/scroll-progress"
-import InteractiveCursor from "@/components/interactive-cursor"
+import ClientCursorWrapper from "@/components/client-cursor-wrapper"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -24,14 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        
+        <Header />
         <ScrollProgress />
-        <main className="">
-          <Header />
-          {children}
-          </main>
+        <main className="">{children}</main>
         <Footer />
-        <InteractiveCursor />
+        <ClientCursorWrapper />
       </body>
     </html>
   )

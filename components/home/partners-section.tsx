@@ -8,15 +8,15 @@ export default function PartnersSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const partners = [
-    { name: "Partner 1", color: "bg-gray-900" },
-    { name: "Partner 2", color: "bg-red-500" },
-    { name: "Partner 3", color: "bg-blue-600" },
-    { name: "Partner 4", color: "bg-green-500" },
-    { name: "Partner 5", color: "bg-gray-800" },
+    { name: "Partner 1", color: "bg-gray-900", imgSrc: "/images/partner1.png" },
+    { name: "Partner 2", color: "bg-red-500", imgSrc: "/images/partner2.png" },
+    { name: "Partner 3", color: "bg-blue-600", imgSrc: "/images/partner3.png" },
+    { name: "Partner 4", color: "bg-green-500", imgSrc: "/images/partner4.png" },
+    { name: "Partner 5", color: "bg-gray-800", imgSrc: "/images/partner5.png" },
   ]
 
   return (
-    <section ref={ref} className="py-20 px-4 bg-gray-50">
+    <section ref={ref} className="py-20 px-4 bg-white">
       <div className="container mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -32,7 +32,7 @@ export default function PartnersSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-wrap justify-center items-center gap-8 max-w-4xl mx-auto"
+          className="flex flex-wrap justify-center items-center gap-8 md:gap-16 max-w-4xl mx-auto"
         >
           {partners.map((partner, index) => (
             <motion.div
@@ -41,9 +41,9 @@ export default function PartnersSection() {
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className={`w-20 h-20 ${partner.color} rounded-2xl flex items-center justify-center text-white font-bold text-xl`}
+              className={`w-20 h-20 rounded-2xl flex items-center justify-center text-white font-bold text-xl`}
             >
-              {partner.name.charAt(0)}
+              <img src={partner.imgSrc} alt={partner.name} className="rounded-xl" />
             </motion.div>
           ))}
         </motion.div>

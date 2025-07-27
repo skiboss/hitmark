@@ -37,8 +37,8 @@ export default function InteractiveCursor() {
     <motion.div
       className="fixed pointer-events-none z-50 mix-blend-difference"
       animate={{
-        x: mousePosition.x - 10,
-        y: mousePosition.y - 10,
+        x: mousePosition.x - 1,
+        y: mousePosition.y - 1,
         scale: isHovering ? 1.5 : 1,
       }}
       transition={{

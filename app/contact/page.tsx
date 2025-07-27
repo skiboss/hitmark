@@ -1,10 +1,19 @@
+import ContactHeroSection from "@/components/contact/contact-hero-section"
+import ContactFormSection from "@/components/contact/contact-form-section"
+import ContactInfoSection from "@/components/contact/contact-info-section"
+import FAQSection from "@/components/contact/faq-section"
+import EnhancedBackground from "@/components/enhanced-background"
+import ClientContactPage from "@/components/client-contact-page"
+
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-4 py-20">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">Contact Us</h1>
-        <p className="text-xl text-gray-600">Coming soon...</p>
-      </div>
-    </div>
+    <ClientContactPage>
+      <EnhancedBackground />
+      <ContactHeroSection />
+      <ContactFormSection />
+      <ContactInfoSection />
+      <FAQSection />
+    </ClientContactPage>
   )
 }
+
