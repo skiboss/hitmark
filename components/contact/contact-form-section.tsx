@@ -84,14 +84,14 @@ export default function ContactFormSection() {
 
     try {
       // Simulate API call - replace with actual Resend integration
-      await new Promise((resolve) => setTimeout(resolve, 2000))
+      // await new Promise((resolve) => setTimeout(resolve, 2000))
 
       // Here you would integrate with Resend
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData),
-      // })
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
 
       setSubmitStatus("success")
       setFormData({ name: "", email: "", company: "", message: "" })
