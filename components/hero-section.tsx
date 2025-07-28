@@ -48,10 +48,10 @@ export default function HeroSection() {
         >
           <motion.div
             animate={{ rotate: [0, 10, -10, 0] }}
-            transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-            className="inline-block"
+            transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+            
           >
-            <Sparkles className="w-8 h-8 text-blue-600 mx-auto mb-4 z-50" />
+            <Sparkles className="w-20 h-20 text-blue-900 mx-auto mb-4 z-auto" />
           </motion.div>
         </motion.div>
 

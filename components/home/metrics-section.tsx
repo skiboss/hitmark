@@ -140,9 +140,9 @@ export default function MetricsSection() {
             {/* Multi-layered pulsing effects */}
             <motion.div
               animate={{
-                scale: [1, 1.3, 1],
-                opacity: [0.1, 0.4, 0.1],
-                rotate: [0, 180, 360],
+                // scale: [1, 1.3, 1],
+                // opacity: [0.1, 0.4, 0.1],
+                // rotate: [0, 180, 360],
               }}
               transition={{
                 duration: 3,
@@ -209,9 +209,9 @@ export default function MetricsSection() {
           >
             <motion.div
               animate={{
-                scale: [1, 1.3, 1],
-                opacity: [0.1, 0.4, 0.1],
-                rotate: [0, -180, -360],
+                // scale: [1, 1.3, 1],
+                // opacity: [0.1, 0.4, 0.1],
+                // rotate: [0, -180, -360],
               }}
               transition={{
                 duration: 3,
@@ -265,9 +265,9 @@ export default function MetricsSection() {
           >
             <motion.div
               animate={{
-                scale: [1, 1.3, 1],
-                opacity: [0.1, 0.4, 0.1],
-                rotate: [0, 270, 360],
+                // scale: [1, 1.3, 1],
+                // opacity: [0.1, 0.4, 0.1],
+                // rotate: [0, 270, 360],
               }}
               transition={{
                 duration: 3,

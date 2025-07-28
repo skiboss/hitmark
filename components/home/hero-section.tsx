@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 import { useMediaQuery } from "@/hooks/use-media-query"
+import { Sparkles } from "lucide-react"
 
 export default function HeroSection() {
   const [displayedText, setDisplayedText] = useState("")
@@ -110,32 +111,74 @@ export default function HeroSection() {
       )}
 
       <div className="container mx-auto text-center max-w-4xl relative z-10">
-        <motion.h1
+        <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="mb-6"
+                >
+                  <motion.div
+                    animate={{ rotate: [0, 10, -10, 0] }}
+                    transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+                    
+                  >
+                    <Sparkles className="w-8 h-8 text-blue-600 mx-auto mb-4 z-auto" />
+                  </motion.div>
+                </motion.div>
+         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight min-h-[150px] md:min-h-[240px]"
-          style={{
-            textShadow: "2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)",
-          }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-4xl leading-normal md:leading-normal md:text-6xl font-semibold text-gray-900 mb-6"
         >
-          {displayedText}
-          {showCursor && (
-            <motion.span
-              animate={{ opacity: [1, 0] }}
-              transition={{ duration: 0.8, repeat: Number.POSITIVE_INFINITY }}
-              className="inline-block w-1 h-8 md:h-16 bg-blue-400 ml-2 shadow-lg"
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
+            Scale your Brand with{" "} 
+          </motion.span>
+          <motion.span
+            // initial={{ opacity: 0, scale: 0.8 }}
+            className="text-4xl md:text-6xl font-semibold text-gray-900 leading-normal md:leading-normal py-2 relative"
+            animate={{
+              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+              opacity: 1, scale: 1,
+            }}
+            transition={{
+              delay: 0.8,
+              duration: 5,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "linear",
+            }}
+            style={{
+              background: "linear-gradient(90deg, #1f2937, #3b82f6, #8b5cf6, #1f2937)",
+              backgroundSize: "300% 100%",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+            // animate={{ opacity: 1, scale: 1 }}
+            // transition={{ delay: 0.8 }}
+            // className="text-blue-600 py-2 leading-normal relative"
+          >
+            Precision Marketing
+            <motion.div
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ delay: 1.2, duration: 0.8 }}
+              className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600 leading-tight origin-left"
             />
-          )}
+          </motion.span>
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0 }} className="leading-tight md:leading-normal">
+            {" "}
+            that hits the mark
+          </motion.span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.8 }}
-          className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto leading-relaxed"
+          transition={{ duration: 0.8, delay: 1 }}
+          className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
           style={{
-            textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
+            // textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
           }}
         >
           Turn Clicks Into Customers With Tailored Marketing Solutions That Deliver Real Results
@@ -144,7 +187,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 3.2 }}
+          transition={{ duration: 0.8, delay: 2.2 }}
         >
           <motion.div
             whileHover={{
