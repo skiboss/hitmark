@@ -74,7 +74,7 @@ export default function ServicesHeroSection() {
               backgroundClip: "text",
             }}
           >
-            Your Growth System. Delivered
+            Your Growth System - Delivered
           </motion.h1>
 
           <motion.p

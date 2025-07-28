@@ -5,15 +5,18 @@ import OurValuesSection from "@/components/about/our-values-section"
 import EnhancedBackground from "@/components/enhanced-background"
 import ClientAboutPage from "@/components/client-about-page"
 import ReadyToScaleSection from "@/components/home/ready-to-scale-section"
+import OurStorySection from "@/components/about/our-story-section"
+import PartnersSection from "@/components/home/partners-section"
 
 export default function AboutPage() {
   return (
     <ClientAboutPage>
       <EnhancedBackground />
       <AboutHeroSection />
-      <WhatMakesUsDifferentSection />
-      <WhyBrandsSection />
+      <OurStorySection />
       <OurValuesSection />
+      <WhatMakesUsDifferentSection />
+      <PartnersSection />
       <ReadyToScaleSection />
     </ClientAboutPage>
   )

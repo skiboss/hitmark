@@ -14,7 +14,7 @@ export default function ServicesPage() {
       <ServicesHeroSection />
       <CoreServicesSection />
       <CaseStudiesSection />
-      <ServiceProcessSection />
+      {/* <ServiceProcessSection /> */}
       {/* <PricingSection /> */}
       <ReadyToScaleSection />
     </ClientServicesPage>

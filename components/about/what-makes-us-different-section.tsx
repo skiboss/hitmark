@@ -91,7 +91,7 @@ export default function WhatMakesUsDifferentSection() {
               className="mt-8"
             >
               <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/images/team-photo.png" alt="Hitmark Digital Team" fill className="object-cover" />
+                <Image src="/images/team-photo2.png" alt="Hitmark Digital Team" fill className="object-cover" />
               </div>
             </motion.div>
           </div>
@@ -167,7 +167,7 @@ export default function WhatMakesUsDifferentSection() {
                 className="relative w-80 h-80 rounded-3xl overflow-hidden shadow-2xl z-10"
                 style={{ transformStyle: "preserve-3d" }}
               >
-                <Image src="/images/team-photo.png" alt="Hitmark Digital Team" fill className="object-cover" />
+                <Image src="/images/team-photo2.png" alt="Hitmark Digital Team" fill className="object-cover" />
 
                 {/* Animated border glow */}
                 <motion.div

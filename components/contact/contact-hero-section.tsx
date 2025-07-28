@@ -81,7 +81,7 @@ export default function ContactHeroSection() {
               backgroundClip: "text",
             }}
           >
-            Let's grow your business
+            Let's Grow Your Business
           </motion.h1>
 
           <motion.p

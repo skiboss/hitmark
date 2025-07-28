@@ -12,6 +12,7 @@ export default function OurValuesSection() {
   const values = [
     {
       icon: Target,
+      imgSrc: "target",
       title: "Precision over volume",
       description: "We scale what works, not what looks impressive in reports.",
       color: "bg-blue-500",
@@ -20,6 +21,7 @@ export default function OurValuesSection() {
     },
     {
       icon: Handshake,
+      imgSrc: "partnership",
       title: "Ownership over excuses",
       description: "We take accountability. Always.",
       color: "bg-green-500",
@@ -28,6 +30,7 @@ export default function OurValuesSection() {
     },
     {
       icon: Zap,
+      imgSrc: "speed",
       title: "Speed over bureaucracy",
       description: "Fast execution beats perfect strategy delayed.",
       color: "bg-yellow-500",
@@ -36,6 +39,7 @@ export default function OurValuesSection() {
     },
     {
       icon: BarChart3,
+      imgSrc: "data",
       title: "Data-driven decision making",
       description: "Every move is backed by insights, not guesswork.",
       color: "bg-purple-500",
@@ -157,7 +161,7 @@ export default function OurValuesSection() {
 
               <motion.div
                 whileHover={{
-                  rotate: [0, 360],
+                //   rotate: [0, 360],
                   scale: 1.2,
                   rotateY: 180,
                 }}
@@ -166,22 +170,23 @@ export default function OurValuesSection() {
                   type: "spring",
                   stiffness: 200,
                 }}
-                className={`w-16 h-16 lg:w-20 lg:h-20 ${value.color} rounded-2xl flex items-center justify-center mx-auto mb-4 lg:mb-6 relative z-10 ${value.glowColor} shadow-lg`}
+                className={`w-16 h-16 lg:w-24 lg:h-24 rounded-2xl flex items-center justify-center mx-auto mb-4 lg:mb-6 relative z-10 ${value.glowColor} drop-shadow-lg`}
                 style={{
                   transformStyle: "preserve-3d",
                 }}
               >
                 <motion.div
-                  animate={{
-                    rotate: [0, 360],
-                  }}
+                  // animate={{
+                  //   rotate: [0, 360],
+                  // }}
                   transition={{
                     duration: 6,
                     repeat: Number.POSITIVE_INFINITY,
                     ease: "linear",
                   }}
                 >
-                  <value.icon className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
+                  <img src={`/images/${value.imgSrc}.png`} className="w-20 h-20 object-cover" />
+                  {/* <value.icon className="w-8 h-8 lg:w-10 lg:h-10 text-white" /> */}
                 </motion.div>
 
                 {/* Icon glow effect */}

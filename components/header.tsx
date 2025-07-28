@@ -60,7 +60,7 @@ export default function Header() {
                 }}
                 whileHover={{
                   rotate: [0, 360],
-                  transition: { duration: 0.5 },
+                  transition: { duration: 1.5 },
                 }}
               >
                 <img src="/hitmark-logo.png" alt="Hitmark Logo"

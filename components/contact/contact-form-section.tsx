@@ -110,9 +110,7 @@ export default function ContactFormSection() {
     formData.message.trim().length >= 10
 
   return (
-    <section ref={ref} id="contact-form" className="py-20 px-4 bg-white grid md:grid-cols-2 gap-4 md:px-4">
-
-      <FAQSection />
+    <section ref={ref} id="contact-form" className="py-20 px-4 bg-white gap-4 md:px-4">
       <div className="container mx-auto max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
