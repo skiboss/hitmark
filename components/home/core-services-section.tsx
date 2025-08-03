@@ -12,6 +12,7 @@ export default function CoreServicesSection() {
   const services = [
     {
       icon: Megaphone,
+      imgSrc: "media",
       title: "Media Buying",
       subtitle: "Meta, Google",
       description: "We launch and scale high-performance ad campaigns on Meta and Google—optimized for conversions",
@@ -20,6 +21,7 @@ export default function CoreServicesSection() {
     },
     {
       icon: TrendingUp,
+      imgSrc: "seo",
       title: "Performance SEO",
       subtitle: "Rankings that drive real revenue",
       description:
@@ -29,6 +31,7 @@ export default function CoreServicesSection() {
     },
     {
       icon: Bot,
+      imgSrc: "ai-powered",
       title: "AI-Powered Leads",
       subtitle: "Automated outreach pipelines",
       description: "Automated, personalized email and sequences that fill your pipeline with prospects",
@@ -126,7 +129,8 @@ export default function CoreServicesSection() {
                   type: "spring",
                   stiffness: 200,
                 }}
-                className={`w-20 h-20 ${service.color} ${service.hoverColor} rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10 shadow-lg`}
+                // ${service.hoverColor}
+                className={`w-20 h-20  rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10 shadow-lg`}
                 style={{
                   transformStyle: "preserve-3d",
                 }}
@@ -141,7 +145,8 @@ export default function CoreServicesSection() {
                     ease: "linear",
                   }}
                 >
-                  <service.icon className="w-10 h-10 text-white" />
+                  <img src={`/images/${service.imgSrc}.png`} className="w-16 h-16 object-cover" />
+                  {/* <service.icon className="w-10 h-10 text-white" /> */}
                 </motion.div>
               </motion.div>
 
@@ -180,18 +185,18 @@ export default function CoreServicesSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-12"
+          className="text-center mt:12 md:mt-16"
         >
           <motion.div
             whileHover={{
               scale: 1.05,
-              boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)",
+              // boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)",
             }}
             whileTap={{ scale: 0.95 }}
           >
             <Button
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full relative overflow-hidden"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 md:px-24 py-4 rounded-full relative overflow-hidden"
               onClick={() => (window.location.href = "#")}
             >
               <span className="relative z-10">Explore Services</span>

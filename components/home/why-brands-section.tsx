@@ -46,7 +46,7 @@ export default function WhyBrandsSection() {
   ]
 
   return (
-    <section ref={ref} className="py-20 px-4 bg-white relative overflow-hidden">
+    <section ref={ref} className="py-20 px-4 bg-gray-50 relative overflow-hidden">
       {/* Animated background elements */}
       <motion.div
         animate={{
@@ -108,7 +108,7 @@ export default function WhyBrandsSection() {
                 rotateX: 5,
                 z: 50,
               }}
-              className="bg-gray-50 p-6 rounded-2xl text-center relative overflow-hidden group"
+              className="bg-gray-50 border p-6 rounded-2xl text-center relative overflow-hidden group"
               style={{
                 transformStyle: "preserve-3d",
               }}
@@ -242,7 +242,7 @@ export default function WhyBrandsSection() {
           >
             <Button
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full relative overflow-hidden"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-16 py-3 rounded-full relative overflow-hidden"
               onClick={() => (window.location.href = "#")}
             >
               <span className="relative z-10">Build my custom plan</span>

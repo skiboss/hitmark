@@ -3,17 +3,17 @@
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Search, Share2, Target, Zap } from "lucide-react"
+import { Search, Share2, Sparkles, Target, Zap } from "lucide-react"
 
 export default function WhoWeAreSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const services = [
-    { icon: Search, label: "Search Engine", color: "text-purple-600" },
-    { icon: Share2, label: "Social Media", color: "text-green-600" },
-    { icon: Target, label: "Lead Generation", color: "text-orange-600" },
-    { icon: Zap, label: "AI Powered", color: "text-pink-600" },
+    { icon: Sparkles, label: "Search Engine", color: "text-purple-600", bg: "#9333ea" },
+    { icon: Sparkles, label: "Social Media", color: "text-green-600", bg: "#16a34a" },
+    { icon: Sparkles, label: "Lead Generation", color: "text-blue-600", bg: "#2563eb" },
+    { icon: Sparkles, label: "AI Powered", color: "text-pink-600", bg: "#db2777" },
   ]
 
   return (
@@ -22,15 +22,15 @@ export default function WhoWeAreSection() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <div className="inline-block bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-block bg-[#FBFBFB] text-gray-900 px-6 py-2 rounded-full text-md font-medium mb-6 md:mb-8 drop-shadow-lg">
             Who We Are?
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 leading-relaxed">
-            Hitmark Digital is a modern performance marketing agency built for growth-focused brands. We specialize in
+          <h2 className="text-xl md:text-2xl text-gray-900 mb-6 leading-relaxed">
+            <span className="font-semibold">Hitmark Digital is a modern performance marketing agency built for growth-focused brands.</span> We specialize in
             precision media buying, revenue-driven SEO, and AI-powered lead generation — helping businesses in
             ecommerce, SaaS, healthcare and fintech scale with clarity, speed, and results.
           </h2>
@@ -51,7 +51,7 @@ export default function WhoWeAreSection() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2 bg-gray-50 px-4 py-2 rounded-full"
             >
-              <service.icon className={`w-5 h-5 ${service.color}`} />
+              <service.icon className={`w-5 h-5 ${service.color}`} fill={`${service.bg}`}/>
               <span className="text-gray-700 font-medium">{service.label}</span>
             </motion.div>
           ))}
@@ -64,7 +64,7 @@ export default function WhoWeAreSection() {
         >
           <Button
             size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-20 py-4 rounded-full"
             onClick={() => (window.location.href = "#")}
           >
             Learn More

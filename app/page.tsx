@@ -9,6 +9,9 @@ import PartnersSection from "@/components/home/partners-section"
 import ReadyToScaleSection from "@/components/home/ready-to-scale-section"
 import EnhancedBackground from "@/components/enhanced-background"
 import ClientHomePage from "@/components/client-home-page"
+import ProcessFlow from "@/components/process-flow"
+import ProcessFlow1 from "@/components/process-flow1"
+import HowItWorks from "@/components/how-it-works"
 
 export default function HomePage() {
   return (
@@ -18,8 +21,11 @@ export default function HomePage() {
       <MetricsSection />
       <WhoWeAreSection />
       <CoreServicesSection />
-      <WhyBrandsSection />
       <ProcessSection />
+      <HowItWorks />
+      <ProcessFlow />
+      {/* <ProcessFlow1 /> */}
+      <WhyBrandsSection />
       <TestimonialsSection />
       <PartnersSection />
       <ReadyToScaleSection />
