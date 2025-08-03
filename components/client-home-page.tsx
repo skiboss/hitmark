@@ -5,6 +5,7 @@ import type React from "react"
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import Loader from "@/components/loader"
+import EnhancedLoader from "./enhanced-loader"
 
 export default function ClientHomePage({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true)
@@ -18,7 +19,7 @@ export default function ClientHomePage({ children }: { children: React.ReactNode
   }, [])
 
   if (isLoading) {
-    return <Loader />
+    return <EnhancedLoader />
   }
 
   return (
