@@ -21,7 +21,7 @@ export default function HomePage() {
       <MetricsSection />
       <WhoWeAreSection />
       <CoreServicesSection />
-      <ProcessSection />
+      {/* <ProcessSection /> */}
       <HowItWorks />
       <ProcessFlow />
       {/* <ProcessFlow1 /> */}
