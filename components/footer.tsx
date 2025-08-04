@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Target, ArrowUp, Instagram, Twitter, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -27,15 +28,121 @@ export default function Footer() {
             </div>
 
             <div className="flex space-x-4 mt-4">
-              <motion.a href="#" whileHover={{ scale: 1.1 }} className="text-purple-600 hover:text-purple-700">
+              <motion.a href="#" whileHover={{ scale: 1.5 }} className="text-purple-600 hover:text-purple-700">
                 <Instagram className="w-5 h-5" />
               </motion.a>
-              <motion.a href="#" whileHover={{ scale: 1.1 }} className="text-blue-400 hover:text-blue-500">
+              <motion.a href="#" whileHover={{ scale: 1.5 }} className="text-blue-400 hover:text-blue-500">
                 <Twitter className="w-5 h-5" />
               </motion.a>
-              <motion.a href="#" whileHover={{ scale: 1.1 }} className="text-blue-600 hover:text-blue-700">
+              <motion.a href="#" whileHover={{ scale: 1.5 }} className="text-blue-600 hover:text-blue-700">
                 <Linkedin className="w-5 h-5" />
               </motion.a>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-sm">
+            <div>
+              <h4 className="font-bold text-gray-900 mb-4">Company</h4>
+              <ul className="space-y-3">
+                <li>
+                  <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-gray-900 mb-4">Services</h4>
+              <ul className="space-y-3">
+                <li>
+                  <Link href="/services#core-services" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Core Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services#case-studies" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Case Studies
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services#process" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Our Process
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Pricing
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-gray-900 mb-4">Resources</h4>
+              <ul className="space-y-3">
+                <li>
+                  <Link href="/blog" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Latest Articles
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact#faq" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    FAQs
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about#values" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Our Values
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about#different" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    What Makes Us Different
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-gray-900 mb-4">Connect</h4>
+              <ul className="space-y-3">
+                <li>
+                  <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Book a Call
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact#contact-form" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Send a Message
+                  </Link>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
