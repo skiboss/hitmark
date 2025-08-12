@@ -29,10 +29,17 @@ export default function OurStorySection() {
             Our Story
           </div>
 
-          <h2 className="text-2xl md:text-2xl font-normal text-gray-900 mb-6 leading-relaxed">
-            Hitmark Digital is a modern performance marketing agency built for growth-focused brands. Hitmark was founded on 
-            a simple belief: Founders and growth leads don’t need another agency to manage — they need a growth system that 
-            runs itself. We work through elite fulfillment partners and manage everything through a single expert point of contact.
+          <h2 className="text-lg md:text-xl font-normal text-gray-900 mb-4 leading-relaxed">
+            Hitmark Digital is a modern performce marketing Agency built for growth focused brands. Hitmark was founded on a simple belief: Founders and growth leads don’t need another agency to manage — they need a growth system that runs itself.
+          </h2>
+          <h2 className="text-lg md:text-xl font-normal text-gray-900 mb-4 leading-relaxed">
+            We dive deep into understanding who your ideal customers are, what challenges they face, and how your product or service solves their problems. With that insight, we build tailored marketing strategies that connect the dots — from paid search and social ads to SEO, display campaigns, and conversion-optimized landing pages.
+          </h2>
+          <h2 className="text-lg md:text-xl font-normal text-gray-900 mb-4 leading-relaxed">
+            Every campaign is driven by data. We continuously track, analyze, and fine-tune every step of the customer journey to make sure your marketing dollars work harder and smarter.
+          </h2>
+          <h2 className="text-lg md:text-xl font-normal text-gray-900 mb-4 leading-relaxed">
+            Our team combines proven expertise with agile processes and AI technnology, delivering faster results and reducing the trial-and-error so you can scale confidently.
           </h2>
         </motion.div>
 

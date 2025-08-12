@@ -11,9 +11,9 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-gray-50 py-12 px-4 relative">
-      <div className="container mx-auto max-w-6xl ">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+    <footer className="bg-gray-50 py-10 px-4 relative">
+      <div className="container mx-auto max-w-7xl ">
+        <div className="flex flex-col md:flex-row justify-evenly items-start md:items-center mb-8">
           <div className="mb-6 md:mb-0">
             <div className="mb-4">
               <img src="/hitmark-logo.png" alt="Hitmark Logo" className="" />
@@ -40,9 +40,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-sm">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-base">
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">Company</h4>
+              <h4 className="font-bold text-gray-900 mb-4">COMPANY</h4>
               <ul className="space-y-3">
                 <li>
                   <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors">
@@ -68,7 +68,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">Services</h4>
+              <h4 className="font-bold text-gray-900 mb-4">SERVICES</h4>
               <ul className="space-y-3">
                 <li>
                   <Link href="/services#core-services" className="text-gray-600 hover:text-blue-600 transition-colors">
@@ -94,36 +94,41 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">Resources</h4>
+              <h4 className="font-bold text-gray-900 mb-4">INDUSTRIES</h4>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/blog" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    Latest Articles
+                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    SAAS
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact#faq" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    FAQs
+                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Ecommerce
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about#values" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    Our Values
+                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Healthcare
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about#different" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    What Makes Us Different
+                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Crypto
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    Igaming
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">Connect</h4>
+              <h4 className="font-bold text-gray-900 mb-4">CONNECT</h4>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
                     Book a Call
                   </Link>
                 </li>
@@ -132,16 +137,11 @@ export default function Footer() {
                     Send a Message
                   </Link>
                 </li>
-                <li>
-                  <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    Careers
-                  </a>
-                </li>
-                <li>
+                {/* <li>
                   <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
                     Privacy Policy
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

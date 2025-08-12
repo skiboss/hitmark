@@ -7,6 +7,7 @@ import ClientAboutPage from "@/components/client-about-page"
 import ReadyToScaleSection from "@/components/home/ready-to-scale-section"
 import OurStorySection from "@/components/about/our-story-section"
 import PartnersSection from "@/components/home/partners-section"
+import HowItWorks from "@/components/how-it-works"
 
 export default function AboutPage() {
   return (
@@ -16,6 +17,7 @@ export default function AboutPage() {
       <OurStorySection />
       <OurValuesSection />
       <WhatMakesUsDifferentSection />
+      <HowItWorks />
       <PartnersSection />
       <ReadyToScaleSection />
     </ClientAboutPage>

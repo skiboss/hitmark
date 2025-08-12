@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header"
+
+import { SiteHeader } from "@/components/site-header"
 import Footer from "@/components/footer"
 import ScrollProgress from "@/components/scroll-progress"
 import ClientCursorWrapper from "@/components/client-cursor-wrapper"
@@ -25,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
+        {/* <SiteHeader /> */}
         <ScrollProgress />
         <main className="">{children}</main>
         <Footer />

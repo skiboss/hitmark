@@ -64,7 +64,7 @@ export default function AboutHeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.h1
-            className="text-4xl md:text-5xl p-4 font-semibold text-gray-900 mb-3 leading-normal"
+            className="text-4xl md:text-6xl p-4 font-semibold text-gray-900 mb-3 leading-normal"
             animate={{
               backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
             }}
@@ -90,7 +90,7 @@ export default function AboutHeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto"
           >
-            At Hitmark Digital, we exist to remove the stress, confusion, and drag of traditional marketing teams. 
+            At Hitmark Digital, we’re not just a digital marketing agency. We are your end-to-end growth partner. 
           </motion.p>
 
           <motion.div
