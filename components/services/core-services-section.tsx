@@ -17,61 +17,52 @@ export default function CoreServicesSection() {
       icon: Megaphone,
       title: "Media Buying",
       description:
-        "We build scalable paid media campaigns across Meta, Google, YouTube, Display & Native channels — optimized daily for efficiency and ROI. Using data-first targeting, we laser-focus on your ideal customers.",
+        "We build and manage scalable paid media campaigns across Meta, Google, YouTube, Display, Native, and more — optimized daily for maximum efficiency and ROI.",
       color: "bg-blue-500",
       hoverColor: "hover:bg-blue-600",
       iconColor: "text-blue-600",
-      fullDescription: `Our media buying service combines strategic planning with tactical execution to maximize your advertising ROI across all major platforms.
+      fullDescription: `By leveraging a data-first targeting approach, we zero in on your ideal customers with precision and deliver measurable growth.
 
       **What We Do:**
-      • Strategic campaign planning and audience research
-      • Cross-platform campaign setup and optimization
-      • Advanced targeting using first-party and lookalike audiences
-      • Creative testing and performance optimization
-      • Real-time bid management and budget allocation
-      • Comprehensive reporting and insights
+      • Strategic campaign planning backed by deep audience research
+      • Cross-platform campaign setup, continuous optimization, and scaling
+      • Advanced targeting with first-party data and lookalike audiences
+      • Creative testing and performance-driven optimization
+      • Real-time bid management and intelligent budget allocation
+      • Transparent, comprehensive reporting and actionable insights
 
       **Platforms We Master:**
       • Meta (Facebook & Instagram)
       • Google Ads (Search, Display, YouTube)
-      • LinkedIn Ads for B2B targeting
-      • Native advertising networks
-      • Programmatic display advertising
+      • LinkedIn Ads (B2B-focused targeting)
+      • Native Advertising Networks
+      • Programmatic Display Advertising
 
       **Results You Can Expect:**
-      • 3-5x improvement in ROAS within 90 days
+      • 3-5x improvement in ROAS
       • 40-60% reduction in cost per acquisition
-      • Scalable campaign structures for long-term growth`,
+      • Scalable campaign structures designed for sustainable, long-term growth`,
     },
     {
       icon: TrendingUp,
       title: "Performance SEO",
       description:
-        "Our SEO combines technical optimization, conversion-first content, and modern link strategies to fuel real growth. • Like leading performance agencies, we use AI for keyword clustering and content optimization.",
+        "SEO is more than rankings — it’s about driving measurable growth and revenue. Our holistic approach combines cutting-edge technical optimization, conversion-focused content, and modern link strategies to fuel your online success.",
       color: "bg-purple-500",
       hoverColor: "hover:bg-purple-600",
       iconColor: "text-purple-600",
-      fullDescription: `Performance SEO that drives revenue, not just rankings. We focus on technical excellence and content that converts visitors into customers.
+      fullDescription: `Leveraging AI-powered keyword clustering and content optimization, we stay ahead of the curve — just like the top performance marketing agencies.
 
-      **Technical SEO Foundation:**
-      • Comprehensive site audits and optimization
-      • Core Web Vitals optimization
-      • Schema markup implementation
-      • Mobile-first indexing optimization
-      • Site speed and performance enhancement
+      **Our Comprehensive SEO Services:**
+      • Full-Site Audits and Technical SEO: Identify and resolve issues affecting site speed, mobile usability, Core Web Vitals, schema markup, and indexing to deliver a seamless user experience and strong search performance.
+      • AI-Driven Keyword Research & Clustering: Use advanced AI tools to uncover strategic keyword groups that match user intent and maximize content relevance.
+      • Conversion-Optimized Content Creation: Develop engaging, authoritative content designed to attract, educate, and convert your ideal audience.
+      • Competitive & Content Gap Analysis: Pinpoint opportunities to outperform competitors and fill content gaps that drive targeted traffic.
 
       **Content Strategy:**
-      • AI-powered keyword research and clustering
-      • Conversion-focused content creation
-      • Topic authority building
-      • User intent optimization
-      • Content gap analysis and competitive research
-
-      **Link Building & Authority:**
-      • White-hat link acquisition strategies
-      • Digital PR and brand mention campaigns
-      • Industry partnership development
-      • Content-driven link earning
+      • White-Hat Link Building & Digital PR: Build your domain authority ethically through outreach, brand mentions, partnerships, and content-driven link earning. 
+      • Continuous Performance Monitoring & Reporting: Track key metrics and optimize campaigns in real-time, adapting quickly to changes in algorithms and market conditions.
+      • Strategic Manual Bidding & Rules-Based Automation: Implement data-driven bidding strategies combined with automated rules to maximize ROI once enough performance data is collected.
 
       **Performance Metrics:**
       • 150-300% increase in organic traffic
@@ -82,32 +73,27 @@ export default function CoreServicesSection() {
       icon: Brain,
       title: "AI-Powered Lead Generation",
       description:
-        "We develop hyper-personalized outreach systems using advanced AI tools. • To intent-driven, high-touch automation that delivers qualified conversations straight to your inbox.",
+        "At Hitmark Digital, we don't just generate leads — we create sales-ready conversations.",
       color: "bg-indigo-500",
       hoverColor: "hover:bg-indigo-600",
       iconColor: "text-indigo-600",
-      fullDescription: `Leverage cutting-edge AI technology to automate and scale your lead generation while maintaining personalization at scale.
+      fullDescription: `AI-driven outreach systems blend hyper-personalized messaging with intelligent automation to deliver qualified prospects directly to your inbox.
 
-      **AI-Powered Outreach:**
-      • Advanced prospect research and qualification
-      • Personalized message generation at scale
-      • Multi-channel outreach sequences (Email, LinkedIn, SMS)
-      • Intent data analysis and lead scoring
-      • Automated follow-up sequences
+      **Our AI Lead Generation System Includes:**
+      • Advanced Prospect Research and Qualification: Utilize AI tools to identify and assess high-potential leads based on intent data and behavioral signals.
+      • Personalized Multi-Channel Outreach: Deploy tailored messaging across Email, LinkedIn, and SMS to engage prospects where they are most active.
+      • Automated Follow-Up Sequences: Implement intelligent follow-ups that adapt based on prospect interactions, ensuring timely and relevant communication.
+      • CRM Integration and Lead Nurturing: Seamlessly integrate with your CRM to automate lead scoring, segmentation, and nurturing workflows.
+      • Behavioural Trigger-Based Campaigns: Launch campaigns that respond to specific prospect actions, increasing engagement and conversion rates.
 
       **Smart Automation:**
-      • CRM integration and lead nurturing
-      • Behavioral trigger-based campaigns
-      • Dynamic content personalization
-      • A/B testing and optimization
-      • Real-time performance monitoring
+      • Dynamic Content Personalization: Deliver content that resonates with individual prospects, enhancing relevance and response rates.
+      • A/B Testing and Optimization: Continuously test and refine messaging, channels, and sequences to improve performance over time.
+      • Real-Time Performance Monitoring: Track key metrics and adjust strategies in real-time to maximize ROI.
 
       **Lead Qualification:**
-      • AI-powered lead scoring models
-      • Automated qualification questionnaires
-      • Intent signal detection
-      • Prospect behavior analysis
-      • Sales-ready lead handoff
+      • AI-Powered Lead Scoring Models: Leverage machine learning to prioritize leads based on their likelihood to convert.
+      • Automated Qualification Questionnaires: Use intelligent forms to assess lead quality and readiness, streamlining the qualification process.
 
       **Expected Outcomes:**
       • 5-10x increase in qualified leads
@@ -129,7 +115,7 @@ export default function CoreServicesSection() {
 
   return (
     <>
-      <section ref={ref} id="core-services" className="py-20 px-4 bg-[#FAFAFA] relative overflow-hidden">
+      <section ref={ref} id="core-services" className="py-20 px-4 bg-gray-50 relative overflow-hidden">
         {/* Background animated elements */}
         <motion.div
           animate={{
@@ -303,34 +289,74 @@ export default function CoreServicesSection() {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              {services[selectedService].fullDescription.split("\n\n").map((paragraph, index) => {
-                if (paragraph.startsWith("**") && paragraph.endsWith(":**")) {
-                  return (
-                    <h3 key={index} className="text-xl font-bold text-gray-900 mt-6 mb-3">
-                      {paragraph.replace(/\*\*/g, "")}
-                    </h3>
-                  )
-                } else if (paragraph.includes("•")) {
-                  const lines = paragraph.split("\n")
-                  return (
-                    <ul key={index} className="list-disc list-inside space-y-2 mb-4">
-                      {lines
-                        .filter((line) => line.includes("•"))
-                        .map((line, lineIndex) => (
-                          <li key={lineIndex} className="text-gray-600">
-                            {line.replace("• ", "")}
+              {(() => {
+                const text = services[selectedService].fullDescription
+                const lines = text
+                  .split("\n")
+                  .map((line) => line.trim())
+                  .filter((line) => line.length > 0)
+                const elements: React.ReactNode[] = []
+                let currentBullets: string[] = []
+
+                const flushBullets = (key: React.Key | null | undefined) => {
+                  if (currentBullets.length > 0) {
+                    elements.push(
+                      <ul key={key} className="list-disc list-inside space-y-2 mb-6 ml-4">
+                        {currentBullets.map((bullet, bulletIndex) => (
+                          <li key={bulletIndex} className="text-gray-600 leading-relaxed">
+                            {bullet}
                           </li>
                         ))}
-                    </ul>
-                  )
-                } else {
-                  return (
-                    <p key={index} className="text-gray-600 leading-relaxed mb-4">
-                      {paragraph}
-                    </p>
-                  )
+                      </ul>,
+                    )
+                    currentBullets = []
+                  }
                 }
-              })}
+
+                lines.forEach((line, index) => {
+                  console.log(`Line ${index}: "${line}"`) // Debug log
+
+                  // Check for headings: lines that start and end with **
+                  if (line.startsWith("**") && line.includes(":")) {
+                    flushBullets(`bullets-before-${index}`)
+
+                    // Remove ** and : to get clean heading text
+                    const headingText = line
+                      .replace(/^\*\*/, "")
+                      .replace(/\*\*:?$/, "")
+                      .replace(":", "")
+                    console.log(`Found heading: "${headingText}"`) // Debug log
+
+                    elements.push(
+                      <h3 key={`heading-${index}`} className="text-xl font-bold text-gray-900 mt-6 mb-3">
+                        {headingText}
+                      </h3>,
+                    )
+                  }
+                  // Check for bullet points
+                  else if (line.startsWith("•")) {
+                    const bulletText = line.replace(/^•\s*/, "")
+                    console.log(`Found bullet: "${bulletText}"`) // Debug log
+                    currentBullets.push(bulletText)
+                  }
+                  // Regular paragraph
+                  else {
+                    flushBullets(`bullets-before-para-${index}`)
+                    console.log(`Found paragraph: "${line}"`) // Debug log
+
+                    elements.push(
+                      <p key={`para-${index}`} className="text-gray-600 leading-relaxed mb-4">
+                        {line}
+                      </p>,
+                    )
+                  }
+                })
+
+                // Flush any remaining bullets
+                flushBullets("final-bullets")
+
+                return elements
+              })()}
             </div>
 
             <div className="mt-8 pt-6 border-t border-gray-200">
