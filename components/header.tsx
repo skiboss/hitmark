@@ -94,18 +94,18 @@ export default function Header() {
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="start" className="w-56 bg-white">
                           <DropdownMenuItem className="text-base py-3">
-                            <Link href="/services/seo" className="w-full">
+                            <Link href="/services#media" className="w-full">
+                              Media Buying
+                            </Link>
+                          </DropdownMenuItem>
+                          <DropdownMenuItem className="text-base py-3">
+                            <Link href="/services#seo" className="w-full">
                               Performance SEO
                             </Link>
                           </DropdownMenuItem>
                           <DropdownMenuItem className="text-base py-3">
-                            <Link href="/services/paid-media" className="w-full">
-                              Paid Media
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem className="text-base py-3">
-                            <Link href="/services/content-marketing" className="w-full">
-                              Content Marketing
+                            <Link href="/services#ai" className="w-full">
+                              AI Lead Generation
                             </Link>
                           </DropdownMenuItem>
                           <DropdownMenuItem className="text-base py-3">
@@ -115,7 +115,7 @@ export default function Header() {
                           </DropdownMenuItem>
                           <DropdownMenuSeparator />
                           <DropdownMenuItem className="text-base py-3 font-medium">
-                            <Link href="/what-we-do" className="w-full">
+                            <Link href="/services" className="w-full">
                               All Services
                             </Link>
                           </DropdownMenuItem>
@@ -163,10 +163,10 @@ export default function Header() {
                       </DropdownMenu>
           
                       <Link
-                        href="/pricing"
+                        href="/contact"
                         className="text-sm xl:text-base font-medium hover:text-upgrow-purple transition-colors px-2 xl:px-3"
                       >
-                        Pricing
+                        Contact Us
                       </Link>
                     </nav>
                     <Button

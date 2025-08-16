@@ -71,12 +71,12 @@ export default function HowItWorks() {
                 {activeStep}. {currentStep.title}
               </div>
               
-              <p className="text-gray-600 text-base leading-relaxed mb-8">
+              <p className="text-gray-600 text-base w-4/5 leading-relaxed mb-8">
                 {currentStep.detailedContent}
               </p>
 
               {/* Bottom Section */}
-              <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+              <div className="flex items-center gap-6 pt-4 border-t border-gray-100">
                 <div className="text-sm font-medium text-gray-500">
                   Our Process
                 </div>

@@ -16,6 +16,7 @@ export default function CoreServicesSection() {
     {
       icon: Megaphone,
       title: "Media Buying",
+      id: "media",
       description:
         "We build and manage scalable paid media campaigns across Meta, Google, YouTube, Display, Native, and more — optimized daily for maximum efficiency and ROI.",
       color: "bg-blue-500",
@@ -46,6 +47,7 @@ export default function CoreServicesSection() {
     {
       icon: TrendingUp,
       title: "Performance SEO",
+      id: "seo",
       description:
         "SEO is more than rankings — it’s about driving measurable growth and revenue. Our holistic approach combines cutting-edge technical optimization, conversion-focused content, and modern link strategies to fuel your online success.",
       color: "bg-purple-500",
@@ -72,6 +74,7 @@ export default function CoreServicesSection() {
     {
       icon: Brain,
       title: "AI-Powered Lead Generation",
+      id: "ai",
       description:
         "At Hitmark Digital, we don't just generate leads — we create sales-ready conversations.",
       color: "bg-indigo-500",
@@ -148,6 +151,7 @@ export default function CoreServicesSection() {
             {services.map((service, index) => (
               <motion.div
                 key={index}
+                id={service.id}
                 initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.2 }}

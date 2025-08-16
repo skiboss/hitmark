@@ -85,11 +85,7 @@ export default function Footer() {
                     Our Process
                   </Link>
                 </li>
-                <li>
-                  <Link href="/services#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    Pricing
-                  </Link>
-                </li>
+                
               </ul>
             </div>
 
@@ -160,7 +156,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-200 pt-6 text-center">
-          <p className="text-sm text-gray-500">© 2025 HitMark. All Rights Reserved</p>
+          <p className="text-sm text-gray-500">© {new Date().getFullYear()} HitMark. All Rights Reserved</p>
         </div>
       </div>
     </footer>
