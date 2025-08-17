@@ -47,7 +47,7 @@ export default function AIAcceleration() {
                       <Brain className="h-5 w-5 sm:h-6 sm:w-6 text-upgrow-purple" />
                     </div>
                     <h4 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Introducing Neurobrand</h4>
-                    <p className="text-sm sm:text-sm text-muted-foreground">
+                    <p className="text-base sm:text-sm text-muted-foreground">
                       We create a comprehensive AI-driven repository built from your brand’s core messaging, creative assets, storytelling guidelines, customer profiles, and trust signals. This foundation ensures your campaigns remain cohesive, compelling, and effective.
                     </p>
                   </div>
@@ -56,7 +56,7 @@ export default function AIAcceleration() {
                       <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-upgrow-purple" />
                     </div>
                     <h4 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Fast-Paced Creation & Experimentation</h4>
-                    <p className="text-sm sm:text-sm text-muted-foreground">
+                    <p className="text-base sm:text-sm text-muted-foreground leading-normal">
                       Our approach streamlines content generation and campaign testing, producing rapid iterations informed by real-world data. This agility keeps your marketing efforts fresh, relevant, and results-focused.
                     </p>
                   </div>
@@ -65,7 +65,7 @@ export default function AIAcceleration() {
                       <Rocket className="h-5 w-5 sm:h-6 sm:w-6 text-upgrow-purple" />
                     </div>
                     <h4 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Trusted AI-Enhanced Processes</h4>
-                    <p className="text-sm sm:text-sm text-muted-foreground">
+                    <p className="text-base sm:text-sm text-muted-foreground">
                       We implement reliable AI workflows that balance automation with strategic insight — enabling scalable campaigns that consistently resonate with your audience and stay true to your brand identity.
                     </p>
                   </div>
