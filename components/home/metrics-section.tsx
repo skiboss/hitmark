@@ -152,7 +152,7 @@ export default function MetricsSection() {
               className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl blur-sm"
             />
 
-            <motion.div
+            {/* <motion.div
               animate={{
                 scale: [1, 1.1, 1],
                 opacity: [0.2, 0.6, 0.2],
@@ -164,7 +164,7 @@ export default function MetricsSection() {
                 delay: 0.5,
               }}
               className="absolute inset-0 bg-blue-400 rounded-2xl blur-xs"
-            />
+            /> */}
 
             <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-xl">
               <motion.div
