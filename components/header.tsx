@@ -108,11 +108,11 @@ export default function Header() {
                               AI Lead Generation
                             </Link>
                           </DropdownMenuItem>
-                          <DropdownMenuItem className="text-base py-3">
+                          {/* <DropdownMenuItem className="text-base py-3">
                             <Link href="/services/marketing-strategy" className="w-full">
                               Marketing Strategy
                             </Link>
-                          </DropdownMenuItem>
+                          </DropdownMenuItem> */}
                           <DropdownMenuSeparator />
                           <DropdownMenuItem className="text-base py-3 font-medium">
                             <Link href="/services" className="w-full">
@@ -123,7 +123,7 @@ export default function Header() {
                       </DropdownMenu>
           
                       <Link
-                        href="/case-studies"
+                        href="/services#case-studies"
                         className="text-sm xl:text-base font-medium hover:text-upgrow-purple transition-colors px-2 xl:px-3"
                       >
                         Case Studies

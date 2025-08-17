@@ -38,93 +38,83 @@ export default function TestimonialsSection() {
 
   const testimonials = [
     {
-      name: "Sarah Chen",
-      company: "Fintrot",
-      role: "Head of Growth",
+      name: "Dr. Michael S.",
+      company: "Private Medical Network",
+      role: "Director of Operations",
       content:
-        "Finally, an agency that works at our pace. Smart strategy, clean execution, and zero wasted motion. HitMark helped us scale from $50K to $500K MRR in just 8 months.",
+        "We’d been spending heavily on ads with almost no increase in patient bookings. Hitmark Digital came in, used AI to target only the right audience, and our appointment bookings went up 240% in three months — all while lowering our ad spend. I’ve never seen results this fast.",
       rating: 5,
-      avatar: "SC",
-      // results: "10x MRR Growth",
-    },
-    {
-      name: "Lena Rodriguez",
-      company: "Arva Health",
-      role: "Marketing Director",
-      content:
-        "HitMark tripled our qualified leads in under 60 days. No fluff, just focused strategy that delivered real results. Their AI-powered lead gen system is a game-changer.",
-      rating: 5,
-      avatar: "LR",
+      avatar: "MS",
       // results: "300% Lead Increase",
     },
     {
-      name: "David Kim",
-      company: "Meiswift",
+      name: "Lisa O.",
+      company: "PayFlow Tech",
       role: "Co-Founder",
       content:
-        "We hit a 4.6x ROAS in the first month. Their team knew exactly how to scale without burning budget. Best marketing investment we've ever made.",
+        "As a small fintech, we were getting buried by bigger players. Hitmark Digital’s media buying strategy, powered by AI audience insights, helped us find and convert high-value users we didn’t even know existed. We grew from 500 to over 10,000 active users in just half a year.",
       rating: 5,
-      avatar: "DK",
+      avatar: "LO",
       // results: "4.6x ROAS",
     },
     {
-      name: "Marcus Thompson",
-      company: "TechFlow SaaS",
+      name: "Ryan T.",
+      company: "LuxeHome Décor",
       role: "CEO",
       content:
-        "From zero to 10,000 users in 6 months. HitMark's performance SEO strategy dominated our niche. Our organic traffic grew 500% and conversions followed.",
+        "We were stuck at the same ROAS for years. The AI-driven targeting Hitmark Digital brought in was like flipping a switch — suddenly we were seeing a 5X return on ad spend. We’re scaling faster than we thought possible.",
       rating: 5,
-      avatar: "MT",
+      avatar: "RT",
       // results: "500% Traffic Growth",
     },
     {
-      name: "Elena Vasquez",
-      company: "GrowthLab",
-      role: "VP Marketing",
+      name: "Priya M.",
+      company: "DataCloud Pro",
+      role: "VP of Sales",
       content:
-        "Their media buying expertise is unmatched. We went from struggling with Facebook ads to scaling profitably across 5 platforms. Revenue up 250% year-over-year.",
+        "Before Hitmark Digital, cold outreach was dead for us. Their AI-powered lead generation delivered over 1,200 qualified leads in just four months. Now our sales team can’t keep up with the volume — a problem I’m happy to have.",
       rating: 5,
-      avatar: "EV",
+      avatar: "PM",
       // results: "250% Revenue Growth",
     },
     {
-      name: "James Wilson",
-      company: "FinanceForward",
-      role: "Growth Lead",
+      name: "Juan C.",
+      company: "BetMaster",
+      role: "Regional Marketing Director",
       content:
-        "HitMark transformed our entire funnel. From awareness to conversion, every touchpoint was optimized. Our customer acquisition cost dropped 60% while quality improved.",
+        "We were launching into the Latin American market with zero local presence. Hitmark Digital combined sharp SEO with media buying to get us noticed. First deposits jumped by 27% in the first quarter alone.",
       rating: 5,
-      avatar: "JW",
+      avatar: "JC",
       // results: "60% CAC Reduction",
     },
     {
-      name: "Priya Patel",
-      company: "TechNova",
-      role: "Marketing Manager",
+      name: "Emily R.",
+      company: "Glow Wellness",
+      role: "Founder",
       content:
-        "Working with HitMark was a game-changer for our B2B SaaS. They helped us identify our ideal customer profile and created campaigns that converted 40% better than our previous efforts.",
+        "Our website traffic was fine, but sales were flat. Hitmark Digital’s AI analytics showed us exactly where people were dropping off. Two months later, our conversion rate had doubled — without spending more on ads.",
       rating: 5,
-      avatar: "PP",
+      avatar: "ER",
       // results: "40% Better Conversion",
     },
     {
-      name: "Priya Patel",
-      company: "TechNova",
-      role: "Marketing Manager",
+      name: "Daniel P.",
+      company: "BlockLearn",
+      role: "Head of Growth",
       content:
-        "Working with HitMark was a game-changer for our B2B SaaS. They helped us identify our ideal customer profile and created campaigns that converted 40% better than our previous efforts.",
+        "Acquiring students for our blockchain courses was becoming too expensive. Hitmark Digital’s AI targeting dropped our cost per acquisition by 41%, and the students we get now are more engaged than ever.",
       rating: 5,
-      avatar: "PP",
+      avatar: "DP",
       // results: "40% Better Conversion",
     },
     {
-      name: "Priya Patel",
-      company: "TechNova",
+      name: "Sarah L.",
+      company: "TechTown Electronics",
       role: "Marketing Manager",
       content:
-        "Working with HitMark was a game-changer for our B2B SaaS. They helped us identify our ideal customer profile and created campaigns that converted 40% better than our previous efforts.",
+        "We needed to own local search, and Hitmark Digital made it happen. We’re now ranking top 3 for all our key terms, and in-store sales are up noticeably. They delivered exactly what they promised.",
       rating: 5,
-      avatar: "PP",
+      avatar: "SL",
       // results: "40% Better Conversion",
     },
     {
@@ -254,7 +244,7 @@ export default function TestimonialsSection() {
         </div> */}
         <div className="max-w-6xl mx-auto" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {/* Carousel Container */}
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden py-4">
             <motion.div
               className="flex transition-transform duration-700 ease-in-out"
               animate={{
@@ -269,7 +259,7 @@ export default function TestimonialsSection() {
               {testimonials.map((testimonial, index) => (
                 <motion.div
                   key={index}
-                  className="flex-shrink-0 w-1/3 px-4"
+                  className="flex-shrink-0 w-1/3 px-2"
                   initial={{ opacity: 0, y: 50 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.8, delay: index * 0.2 }}

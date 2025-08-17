@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export default function ContactHeroSection() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-purple-100 via-white to-blue-100 relative overflow-hidden min-h-screen flex items-center">
+    <section className="py-10 px-4 bg-gradient-to-br from-purple-100 via-white to-blue-100 relative overflow-hidden min-h-screen md:min-h-[30rem] flex items-center">
       {/* Hero Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

@@ -10,6 +10,7 @@ import ReadyToScaleSection from "@/components/home/ready-to-scale-section"
 import EnhancedBackground from "@/components/enhanced-background"
 import ClientHomePage from "@/components/client-home-page"
 import DigitalMarketingChanged from "@/components/home/digital-marketing-changed"
+import AIAcceleration from "@/components/home/ai-acceleration-section"
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
       <WhoWeAreSection />
       <DigitalMarketingChanged />
       <CoreServicesSection />
+      <AIAcceleration />
       {/* <ProcessSection /> */}
       {/* <ProcessFlow /> */}
       {/* <ProcessFlow1 /> */}

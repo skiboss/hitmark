@@ -110,14 +110,14 @@ export default function ContactFormSection() {
     formData.message.trim().length >= 10
 
   return (
-    <section ref={ref} id="contact-form" className="py-20 px-4 bg-white gap-4 md:px-4">
+    <section ref={ref} id="contact-form" className="py-20 px-4 bg-white gap-4 md:px-4 md:py-8">
       <div className="container mx-auto max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <form onSubmit={handleSubmit} className="bg-gray-50 p-8 md:p-12 md:mt-36 rounded-3xl shadow-xl border border-gray-100">
+          <form onSubmit={handleSubmit} className="bg-gray-50 p-8 md:p-12 md:mt-4 rounded-3xl shadow-xl border border-gray-100">
             <div className="space-y-6">
               {/* Name Field */}
               <motion.div
