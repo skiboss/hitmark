@@ -3,17 +3,17 @@
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Search, Share2, Sparkles, Target, Zap } from "lucide-react"
+import { Search, Share2, Sparkle, Target, Zap } from "lucide-react"
 
 export default function WhoWeAreSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const services = [
-    { icon: Sparkles, label: "Search Engine", color: "text-purple-600", bg: "#9333ea" },
-    { icon: Sparkles, label: "Social Media", color: "text-green-600", bg: "#16a34a" },
-    { icon: Sparkles, label: "Lead Generation", color: "text-blue-600", bg: "#2563eb" },
-    { icon: Sparkles, label: "AI Powered", color: "text-pink-600", bg: "#db2777" },
+    { icon: Sparkle, label: "Search Engine", color: "text-purple-600", bg: "#9333ea" },
+    { icon: Sparkle, label: "Social Media", color: "text-green-600", bg: "#16a34a" },
+    { icon: Sparkle, label: "Lead Generation", color: "text-blue-600", bg: "#2563eb" },
+    { icon: Sparkle, label: "AI Powered", color: "text-pink-600", bg: "#db2777" },
   ]
 
   return (

@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-base">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 text-base">
             <div>
               <h4 className="font-bold text-gray-900 mb-4">COMPANY</h4>
               <ul className="space-y-3">
@@ -68,52 +68,30 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">SERVICES</h4>
-              <ul className="space-y-3">
-                <li>
-                  <Link href="/services#core-services" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    Core Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services#case-studies" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    Case Studies
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services#process" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    Our Process
-                  </Link>
-                </li>
-                
-              </ul>
-            </div>
-
-            <div>
               <h4 className="font-bold text-gray-900 mb-4">INDUSTRIES</h4>
               <ul className="space-y-3">
                 <li>
-                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <Link href="/services#case-studies" className="text-gray-600 hover:text-blue-600 transition-colors">
                     SAAS
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <Link href="/services#case-studies" className="text-gray-600 hover:text-blue-600 transition-colors">
                     Ecommerce
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <Link href="/services#case-studies" className="text-gray-600 hover:text-blue-600 transition-colors">
                     Healthcare
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <Link href="/services#case-studies" className="text-gray-600 hover:text-blue-600 transition-colors">
                     Crypto
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <Link href="/services#case-studies" className="text-gray-600 hover:text-blue-600 transition-colors">
                     Igaming
                   </Link>
                 </li>

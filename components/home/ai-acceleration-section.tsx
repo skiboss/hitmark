@@ -12,7 +12,7 @@ export default function AIAcceleration() {
         <section className="w-full py-8 sm:py-12 md:py-16 lg:py-24 bg-white dark:bg-gray-950 md:max-w-6xl mx-auto">
           <div className="container px-4 md:px-6">
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-14 items-center">
-              <div className="relative order-2 lg:order-1">
+              <div className="relative order-2 lg:order-1 p-8">
                 <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Human Insight + AI Acceleration"
@@ -25,7 +25,7 @@ export default function AIAcceleration() {
                 <p className="text-upgrow-purple font-semibold text-xs sm:text-sm tracking-wide">
                   THINK MARKETING SYSTEMS
                 </p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
                   Blending Human Wisdom with AI Power
                 </h2>
                 <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">

@@ -23,13 +23,13 @@ export default function ContactInfoSection() {
       description: "Mon-Fri from 8am to 5pm",
       color: "bg-green-500",
     },
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      details: "New York, NY",
-      description: "Come say hello at our office",
-      color: "bg-purple-500",
-    },
+    // {
+    //   icon: MapPin,
+    //   title: "Visit Us",
+    //   details: "New York, NY",
+    //   description: "Come say hello at our office",
+    //   color: "bg-purple-500",
+    // },
     {
       icon: Clock,
       title: "Working Hours",
@@ -54,7 +54,7 @@ export default function ContactInfoSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {contactInfo.map((info, index) => (
             <motion.div
               key={index}

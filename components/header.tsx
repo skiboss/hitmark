@@ -129,38 +129,12 @@ export default function Header() {
                         Case Studies
                       </Link>
           
-                      <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
-                          <Button
-                            variant="ghost"
-                            className="flex items-center gap-1 text-sm xl:text-base font-medium hover:text-upgrow-purple transition-colors px-2 xl:px-3"
-                          >
-                            About <ChevronDown className="h-4 w-4" />
-                          </Button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent align="start" className="w-48 bg-white outline-none">
-                          <DropdownMenuItem className="text-base py-3">
-                            <Link href="/about#different" className="w-full">
-                              What Makes Us Different
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem className="text-base py-3">
-                            <Link href="/about#values" className="w-full">
-                              Our Values
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem className="text-base py-3">
-                            <Link href="/careers" className="w-full">
-                              Careers
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem className="text-base py-3">
-                            <Link href="/contact" className="w-full">
-                              Contact Us
-                            </Link>
-                          </DropdownMenuItem>
-                        </DropdownMenuContent>
-                      </DropdownMenu>
+                    <Link
+                        href="/about"
+                        className="text-sm xl:text-base font-medium hover:text-upgrow-purple transition-colors px-2 xl:px-3"
+                      >
+                        About
+                      </Link>
           
                       <Link
                         href="/contact"

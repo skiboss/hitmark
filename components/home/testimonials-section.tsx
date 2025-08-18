@@ -283,8 +283,8 @@ export default function TestimonialsSection() {
                       </div>
                       <div>
                         <p className="font-semibold text-gray-900 text-sm">{testimonial.name}</p>
-                        <p className="text-gray-500 text-xs">{testimonial.role}, 
-                        <span className="text-blue-600 text-xs font-medium">{testimonial.company}</span></p>
+                        <p className="text-gray-500 text-xs">{testimonial.role},  
+                        <span className="text-blue-600 text-xs font-medium"> {testimonial.company}</span></p>
                       </div>
                     </div>
                   </div>
