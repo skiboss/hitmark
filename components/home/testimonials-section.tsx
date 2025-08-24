@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
       role: "Marketing Director",
       content:
         "Hitmark tripled our qualified leads in under 60 days. No fluff, just focused strategy that delivered real results.",
-      rating: 5,
+      rating: 4,
       imgSrc: "testimonial2"
     },
     {
@@ -53,7 +53,7 @@ export default function TestimonialsSection() {
       role: "Co-Founder",
       content:
         "As a small fintech, we were getting buried by bigger players. Hitmark Digital’s media buying strategy, powered by AI audience insights, helped us find and convert high-value users we didn’t even know existed. We grew from 500 to over 10,000 active users in just half a year.",
-      rating: 5,
+      rating: 4,
       avatar: "LO",
       // results: "4.6x ROAS",
     },
@@ -73,7 +73,7 @@ export default function TestimonialsSection() {
       role: "VP of Sales",
       content:
         "Before Hitmark Digital, cold outreach was dead for us. Their AI-powered lead generation delivered over 1,200 qualified leads in just four months. Now our sales team can’t keep up with the volume — a problem I’m happy to have.",
-      rating: 5,
+      rating: 4,
       avatar: "PM",
       // results: "250% Revenue Growth",
     },
@@ -133,7 +133,7 @@ export default function TestimonialsSection() {
       role: "Fundraising Director",
       content:
         "We wanted to connect with younger donors but nothing worked. Hitmark Digital's AI audience mapping found exactly where to reach them. We tripled our donor base and increased average donations by 22% in under six months.",
-      rating: 5,
+      rating: 4,
       avatar: "MK",
       // results: "40% Better Conversion",
     },

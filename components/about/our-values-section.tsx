@@ -255,7 +255,7 @@ export default function OurValuesSection() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg rounded-full relative overflow-hidden shadow-xl"
-              onClick={() => (window.location.href = "#")}
+              onClick={() => (window.location.href = "/contact#contact-form")}
             >
               <span className="relative z-10 font-semibold">Let's Talk Growth</span>
 

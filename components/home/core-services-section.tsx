@@ -197,7 +197,7 @@ export default function CoreServicesSection() {
             <Button
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 md:px-24 py-4 rounded-full relative overflow-hidden"
-              onClick={() => (window.location.href = "#")}
+              onClick={() => (window.location.href = "/services")}
             >
               <span className="relative z-10">Explore Services</span>
             </Button>

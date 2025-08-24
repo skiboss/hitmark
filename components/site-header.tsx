@@ -158,7 +158,7 @@ export function SiteHeader() {
             asChild
             className="hidden sm:inline-flex bg-upgrow-purple hover:bg-upgrow-purple-dark text-white border-0 px-3 sm:px-6 py-2 font-medium text-sm"
           >
-            <Link href="/book-strategy-call">Book Strategy Call</Link>
+            <Link href="https://calendly.com/hitmarkdigital">Book Strategy Call</Link>
           </Button>
 
           {/* Mobile Menu */}

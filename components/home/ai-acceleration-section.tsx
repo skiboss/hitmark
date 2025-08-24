@@ -14,10 +14,10 @@ export default function AIAcceleration() {
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-14 items-center">
               <div className="relative order-2 lg:order-1 p-8">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/images/team_pic.png"
                   alt="Human Insight + AI Acceleration"
                   width={300}
-                  height={200}
+                  height={300}
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
               </div>

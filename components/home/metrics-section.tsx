@@ -166,16 +166,16 @@ export default function MetricsSection() {
               className="absolute inset-0 bg-blue-400 rounded-2xl blur-xs"
             /> */}
 
-            <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-xl">
+            <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-lg">
               <motion.div
                 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2"
                 animate={
                   isInView
                     ? {
-                        color: ["#1f2937", "#3b82f6", "#8b5cf6", "#1f2937"],
+                        // color: ["#1f2937", "#3b82f6", "#8b5cf6", "#1f2937"],
                         textShadow: [
                           "0 0 0px rgba(59,130,246,0)",
-                          "0 0 20px rgba(59,130,246,0.5)",
+                          "0 0 10px rgba(59,130,246,0.5)",
                           "0 0 0px rgba(59,130,246,0)",
                         ],
                       }
@@ -222,16 +222,16 @@ export default function MetricsSection() {
               className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl blur-sm"
             />
 
-            <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-xl">
+            <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-lg">
               <motion.div
                 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2"
                 animate={
                   isInView
                     ? {
-                        color: ["#1f2937", "#8b5cf6", "#ec4899", "#1f2937"],
+                        // color: ["#1f2937", "#8b5cf6", "#ec4899", "#1f2937"],
                         textShadow: [
                           "0 0 0px rgba(139,92,246,0)",
-                          "0 0 20px rgba(139,92,246,0.5)",
+                          "0 0 10px rgba(139,92,246,0.5)",
                           "0 0 0px rgba(139,92,246,0)",
                         ],
                       }
@@ -278,16 +278,16 @@ export default function MetricsSection() {
               className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl blur-sm"
             />
 
-            <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-xl">
+            <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-lg">
               <motion.div
                 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2"
                 animate={
                   isInView
                     ? {
-                        color: ["#1f2937", "#10b981", "#3b82f6", "#1f2937"],
+                        // color: ["#1f2937", "#10b981", "#3b82f6", "#1f2937"],
                         textShadow: [
                           "0 0 0px rgba(16,185,129,0)",
-                          "0 0 20px rgba(16,185,129,0.5)",
+                          "0 0 10px rgba(16,185,129,0.5)",
                           "0 0 0px rgba(16,185,129,0)",
                         ],
                       }

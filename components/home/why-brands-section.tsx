@@ -243,7 +243,7 @@ export default function WhyBrandsSection() {
             <Button
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-16 py-3 rounded-full relative overflow-hidden"
-              onClick={() => (window.location.href = "#")}
+              onClick={() => (window.location.href = "/contact#contact-form")}
             >
               <span className="relative z-10">Build my custom plan</span>
             </Button>

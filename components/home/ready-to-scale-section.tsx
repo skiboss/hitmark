@@ -65,7 +65,7 @@ export default function ReadyToScaleSection() {
             <Button
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={() => (window.location.href = "#")}
+              onClick={() => (window.location.href = "https://calendly.com/hitmarkdigital")}
             >
               Book Your Free Strategy Call
             </Button>

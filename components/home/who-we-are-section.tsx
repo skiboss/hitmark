@@ -65,7 +65,7 @@ export default function WhoWeAreSection() {
           <Button
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white px-20 py-4 rounded-full"
-            onClick={() => (window.location.href = "#")}
+            onClick={() => (window.location.href = "/about")}
           >
             Learn More
           </Button>

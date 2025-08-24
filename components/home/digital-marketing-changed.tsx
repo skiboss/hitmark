@@ -15,7 +15,7 @@ export default function DigitalMarketingChanged() {
 
   return (
         <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 mx-auto">
-          <div className="container px-4 md:px-36">
+          <div className="container px-4 md:px-36 mx-auto">
             <div className="bg-gradient-to-br from-purple-100 via-purple-50 to-pink-50 dark:from-purple-900/20 dark:via-purple-800/10 dark:to-pink-900/20 rounded-none sm:rounded-2xl lg:rounded-3xl p-8 sm:p-12">
               <div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16 lg:mb-20">
                 <p className="text-gray-600 dark:text-gray-400 font-medium text-sm sm:text-base mb-6 sm:mb-8 tracking-wide uppercase">
@@ -40,9 +40,9 @@ Because the old playbook is dead. We’re building a new one. Together.
 
               <div className="grid items-center sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
                 <div className="flex items-center text-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto">
+                  <div className="w-20 sm:w-28 sm:h-12 mx-auto">
                     <Image
-                      src="/placeholder.svg?height=80&width=80"
+                      src="/images/brain.png"
                       alt="Efficient by Design Icon"
                       width={80}
                       height={80}
@@ -57,13 +57,13 @@ Because the old playbook is dead. We’re building a new one. Together.
                 </div>
 
                 <div className="flex items-center text-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto">
+                  <div className="w-20 sm:w-28 sm:h-12 mx-auto">
                     <Image
-                      src="/placeholder.svg?height=80&width=80"
+                      src="/images/tar.png"
                       alt="Human Insight AI Icon"
                       width={80}
                       height={80}
-                      className="w-full h-full"
+                      className="w-full h-full flex"
                     />
                   </div>
                   <h4 className="text-sm font-semibold text-gray-900 dark:text-white leading-tight">
@@ -74,13 +74,13 @@ Because the old playbook is dead. We’re building a new one. Together.
                 </div>
 
                 <div className="flex items-center text-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto">
+                  <div className="w-20 sm:w-28 sm:h-12 mx-auto">
                     <Image
-                      src="/placeholder.svg?height=80&width=80"
+                      src="/images/trend.png"
                       alt="Marketing Fundamentals Icon"
                       width={80}
                       height={80}
-                      className="w-full h-full"
+                      className="w-full h-full flex"
                     />
                   </div>
                   <h4 className="text-sm font-semibold text-gray-900 dark:text-white leading-tight

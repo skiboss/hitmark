@@ -108,7 +108,8 @@ export default function AboutHeroSection() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-xl"
-                onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() => window.location.href = "/contact#contact-form"  }
+                // document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })
               >
                 Get Your Free Growth Plan
               </Button>

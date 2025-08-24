@@ -102,7 +102,7 @@ export default function Footer() {
               <h4 className="font-bold text-gray-900 mb-4">CONNECT</h4>
               <ul className="space-y-3">
                 <li>
-                  <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <Link href="https://calendly.com/hitmarkdigital" className="text-gray-600 hover:text-blue-600 transition-colors">
                     Book a Call
                   </Link>
                 </li>

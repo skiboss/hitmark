@@ -133,7 +133,7 @@ export default function Header() {
                         href="/about"
                         className="text-sm xl:text-base font-medium hover:text-upgrow-purple transition-colors px-2 xl:px-3"
                       >
-                        About
+                        About Us
                       </Link>
           
                       <Link
@@ -147,7 +147,7 @@ export default function Header() {
                     asChild
                     className="hidden sm:inline-flex bg-white text-gray-800 border-upgrow-purple border-2 rounded-none hover:bg-upgrow-purple-dark font-medium px-3 sm:px-6 py-3 text-sm"
                   >
-                    <Link href="/book-strategy-call">Book Strategy Call</Link>
+                    <Link href="https://calendly.com/hitmarkdigital">Book Strategy Call</Link>
                   </Button>
 
           {/* Mobile Menu */}

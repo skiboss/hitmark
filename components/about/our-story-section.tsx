@@ -63,20 +63,13 @@ export default function OurStorySection() {
             </motion.div>
           ))}
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <Button
+        {/* <Button
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full"
-            onClick={() => (window.location.href = "#")}
+            onClick={() => (location.href = "https://www.hitmark.com")}
           >
             Learn More
-          </Button>
-        </motion.div>
+          </Button> */}
       </div>
     </section>
   )

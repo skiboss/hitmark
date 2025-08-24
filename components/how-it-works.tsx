@@ -116,7 +116,7 @@ export default function HowItWorks() {
 
         {/* Right Panel - Team Image */}
         <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-lg overflow-hidden">
-          <div className="h-full flex items-center justify-center p-8">
+          <div className="h-full flex items-center justify-center p-2">
             <div className="relative">
               <img
                 src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600"
