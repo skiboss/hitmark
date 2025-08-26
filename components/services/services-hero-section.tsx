@@ -122,7 +122,7 @@ export default function ServicesHeroSection() {
               <Button
                 size="lg"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-xl"
-                onClick={() => document.getElementById("core-services")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() => (window.location.href = "/contact#contact-form")}
               >
                 Get Your Free Growth Plan
                 <motion.div animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}>

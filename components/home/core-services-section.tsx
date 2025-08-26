@@ -120,9 +120,9 @@ export default function CoreServicesSection() {
 
               <motion.div
                 whileHover={{
-                  rotate: 360,
-                  scale: 1.2,
-                  rotateY: 180,
+                  // rotate: 360,
+                  // scale: 1.2,
+                  // rotateY: 180,
                 }}
                 transition={{
                   duration: 0.6,
@@ -137,7 +137,7 @@ export default function CoreServicesSection() {
               >
                 <motion.div
                   animate={{
-                    rotate: [0, 360],
+                    // rotate: [0, 360],
                   }}
                   transition={{
                     duration: 8,

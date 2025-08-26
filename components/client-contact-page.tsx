@@ -3,7 +3,7 @@
 import type React from "react"
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
-import EnhancedLoader from "@/components/enhanced-loader"
+import EnhancedLoad from "@/components/load"
 
 export default function ClientContactPage({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true)
@@ -17,7 +17,7 @@ export default function ClientContactPage({ children }: { children: React.ReactN
   }, [])
 
   if (isLoading) {
-    return <EnhancedLoader />
+    return <EnhancedLoad />
   }
 
   return (

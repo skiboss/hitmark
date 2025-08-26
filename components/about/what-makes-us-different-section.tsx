@@ -52,8 +52,8 @@ const services: Service[] = [
 
 export default function WhatMakesUsDifferentSection() {
   return (
-    <section className="w-full py-8 sm:py-12 md:py-16 lg:py-24 bg-white dark:bg-gray-950">
-      <div className="container px-4 md:px-6">
+    <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 bg-white dark:bg-gray-950">
+      <div className="container px-4 md:px-6 mx-auto">
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12 lg:mb-16">
           <p className="text-upgrow-purple font-semibold text-xs sm:text-sm tracking-wide mb-4 sm:mb-6">
             WHAT MAKES US DIFFERENT?
@@ -63,7 +63,7 @@ export default function WhatMakesUsDifferentSection() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <div
               key={index}

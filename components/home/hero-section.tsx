@@ -199,7 +199,7 @@ export default function HeroSection() {
             <Button
               size={isMobile ? "default" : "lg"}
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-2 md:py-4 text-base md:text-lg rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 relative overflow-hidden border-2 border-blue-500/20"
-              onClick={() => (window.location.href = "#")}
+              onClick={() => (window.location.href = "/contact#contact-form")}
             >
               <span className="relative z-10 font-semibold">Get Your Free Growth Plan</span>
             </Button>

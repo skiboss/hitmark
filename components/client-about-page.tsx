@@ -18,7 +18,7 @@ export default function ClientAboutPage({ children }: { children: React.ReactNod
   }, [])
 
   if (isLoading) {
-    return <EnhancedLoader />
+    return <Loader />
   }
 
   return (

@@ -23,12 +23,12 @@ export default function Footer() {
             <div className="space-y-1 text-base text-gray-600">
               <p>6220 Westpark Drive Suite 149-B107</p>
               <p>Houston TX 77057, United States</p>
-              <p className="font-medium pt-4">+(234) 887 298 2093</p>
+              <p className="font-medium pt-4">+1(832) 781-9909</p>
               <p className="font-medium">admin@hitmark.com</p>
             </div>
 
             <div className="flex space-x-4 mt-4">
-              <motion.a href="#" whileHover={{ scale: 1.5 }} className="text-purple-600 hover:text-purple-700">
+              <motion.a href="https://www.instagram.com/hitmarkdigital?igsh=MWUyb3J3YWY2cGwzNQ==" whileHover={{ scale: 1.5 }} className="text-purple-600 hover:text-purple-700">
                 <Instagram className="w-5 h-5" />
               </motion.a>
               <motion.a href="#" whileHover={{ scale: 1.5 }} className="text-blue-400 hover:text-blue-500">
