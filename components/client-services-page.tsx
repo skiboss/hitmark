@@ -4,6 +4,7 @@ import type React from "react"
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import EnhancedLoader from "@/components/enhanced-loader"
+import EnhancedLoad from "./load"
 
 export default function ClientServicesPage({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true)
@@ -11,13 +12,13 @@ export default function ClientServicesPage({ children }: { children: React.React
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2500)
+    }, 100)
 
     return () => clearTimeout(timer)
   }, [])
 
   if (isLoading) {
-    return <EnhancedLoader />
+    return <EnhancedLoad />
   }
 
   return (

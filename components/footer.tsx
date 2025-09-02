@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="space-y-1 text-base text-gray-600">
               <p>6220 Westpark Drive Suite 149-B107</p>
               <p>Houston TX 77057, United States</p>
-              <p className="font-medium pt-4">+1(832) 781-9909</p>
+              <p className="font-medium pt-4">+1 (832) 781-9909</p>
               <p className="font-medium">admin@hitmark.com</p>
             </div>
 

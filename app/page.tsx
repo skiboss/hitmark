@@ -15,7 +15,7 @@ import AIAcceleration from "@/components/home/ai-acceleration-section"
 export default function HomePage() {
   return (
 <ClientHomePage>
-      <EnhancedBackground />
+      {/* <EnhancedBackground /> */}
       <HeroSection />
       <MetricsSection />
       <WhoWeAreSection />

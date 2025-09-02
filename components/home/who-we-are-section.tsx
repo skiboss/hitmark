@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Search, Share2, Sparkle, Target, Zap } from "lucide-react"
+import { Sparkle } from "lucide-react"
 
 export default function WhoWeAreSection() {
   const ref = useRef(null)

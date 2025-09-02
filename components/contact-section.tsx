@@ -13,7 +13,7 @@ export default function ContactSection() {
 
   const contactInfo = [
     { icon: Mail, label: "Email", value: "hello@hitmarkdigital.com" },
-    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
+    { icon: Phone, label: "Phone", value: "+1 (832) 781-9909" },
     { icon: MapPin, label: "Location", value: "New York, NY" },
   ]
 
@@ -22,29 +22,6 @@ export default function ContactSection() {
       ref={ref}
       className="py-20 px-4 bg-gradient-to-br from-gray-900 to-black text-white relative overflow-hidden"
     >
-      {/* Animated background elements */}
-      <motion.div
-        animate={{
-          rotate: 360,
-          scale: [1, 1.2, 1],
-        }}
-        transition={{
-          rotate: { duration: 30, repeat: Number.POSITIVE_INFINITY, ease: "linear" },
-          scale: { duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-        }}
-        className="absolute top-20 left-10 w-32 h-32 bg-blue-600/10 rounded-full"
-      />
-      <motion.div
-        animate={{
-          rotate: -360,
-          y: [0, -30, 0],
-        }}
-        transition={{
-          rotate: { duration: 25, repeat: Number.POSITIVE_INFINITY, ease: "linear" },
-          y: { duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-        }}
-        className="absolute bottom-20 right-20 w-24 h-24 bg-purple-600/10 rounded-full"
-      />
 
       <div className="container mx-auto relative z-10">
         <motion.div

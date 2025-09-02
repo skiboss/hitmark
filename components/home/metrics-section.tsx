@@ -109,7 +109,8 @@ export default function MetricsSection() {
               ease: "linear",
             }}
             style={{
-              background: "linear-gradient(90deg, #1f2937, #3b82f6, #8b5cf6, #1f2937)",
+              // background: "linear-gradient(90deg, #1f2937, #3b82f6, #8b5cf6, #1f2937)",
+              background: "#7C3BED",
               backgroundSize: "300% 100%",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -132,9 +133,9 @@ export default function MetricsSection() {
               rotateY: 8,
               rotateX: 5,
               z: 50,
-              boxShadow: "0 30px 60px rgba(0,0,0,0.2)",
+              // boxShadow: "0 30px 60px rgba(0,0,0,0.2)",
             }}
-            className="text-center relative group"
+            className="text-center relative group rounded-2xl"
             style={{ transformStyle: "preserve-3d" }}
           >
             {/* Multi-layered pulsing effects */}
@@ -149,7 +150,7 @@ export default function MetricsSection() {
                 repeat: Number.POSITIVE_INFINITY,
                 ease: "easeInOut",
               }}
-              className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl blur-sm"
+              className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl"
             />
 
             {/* <motion.div
@@ -166,7 +167,7 @@ export default function MetricsSection() {
               className="absolute inset-0 bg-blue-400 rounded-2xl blur-xs"
             /> */}
 
-            <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-lg">
+            <div className="relative z-10 bg-white/90 backdrop-blur-sm p-6 rounded-2xl border border-white/20 shadow-lg">
               <motion.div
                 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2"
                 animate={
@@ -174,9 +175,9 @@ export default function MetricsSection() {
                     ? {
                         // color: ["#1f2937", "#3b82f6", "#8b5cf6", "#1f2937"],
                         textShadow: [
-                          "0 0 0px rgba(59,130,246,0)",
-                          "0 0 10px rgba(59,130,246,0.5)",
-                          "0 0 0px rgba(59,130,246,0)",
+                          // "0 0 0px rgba(59,130,246,0)",
+                          // "0 0 10px rgba(59,130,246,0.5)",
+                          // "0 0 0px rgba(59,130,246,0)",
                         ],
                       }
                     : {}
@@ -196,13 +197,13 @@ export default function MetricsSection() {
           <motion.div
             initial={{ opacity: 0, y: 50, scale: 0.8, rotateX: -15 }}
             animate={isInView ? { opacity: 1, y: 0, scale: 1, rotateX: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             whileHover={{
               scale: 1.08,
               rotateY: 8,
               rotateX: 5,
               z: 50,
-              boxShadow: "0 30px 60px rgba(0,0,0,0.2)",
+              // boxShadow: "0 30px 60px rgba(0,0,0,0.2)",
             }}
             className="text-center relative group"
             style={{ transformStyle: "preserve-3d" }}
@@ -219,10 +220,10 @@ export default function MetricsSection() {
                 ease: "easeInOut",
                 delay: 0.7,
               }}
-              className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl blur-sm"
+              className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl"
             />
 
-            <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-lg">
+            <div className="relative z-10 bg-white/90 backdrop-blur-sm p-6 rounded-2xl border border-white/20 shadow-lg">
               <motion.div
                 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2"
                 animate={
@@ -230,9 +231,9 @@ export default function MetricsSection() {
                     ? {
                         // color: ["#1f2937", "#8b5cf6", "#ec4899", "#1f2937"],
                         textShadow: [
-                          "0 0 0px rgba(139,92,246,0)",
-                          "0 0 10px rgba(139,92,246,0.5)",
-                          "0 0 0px rgba(139,92,246,0)",
+                          // "0 0 0px rgba(139,92,246,0)",
+                          // "0 0 10px rgba(139,92,246,0.5)",
+                          // "0 0 0px rgba(139,92,246,0)",
                         ],
                       }
                     : {}
@@ -252,13 +253,13 @@ export default function MetricsSection() {
           <motion.div
             initial={{ opacity: 0, y: 50, scale: 0.8, rotateX: -15 }}
             animate={isInView ? { opacity: 1, y: 0, scale: 1, rotateX: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             whileHover={{
               scale: 1.08,
               rotateY: 8,
               rotateX: 5,
               z: 50,
-              boxShadow: "0 30px 60px rgba(0,0,0,0.2)",
+              // boxShadow: "0 30px 60px rgba(0,0,0,0.2)",
             }}
             className="text-center relative group"
             style={{ transformStyle: "preserve-3d" }}
@@ -275,10 +276,10 @@ export default function MetricsSection() {
                 ease: "easeInOut",
                 delay: 1.4,
               }}
-              className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl blur-sm"
+              className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl"
             />
 
-            <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-lg">
+            <div className="relative z-10 bg-white/90 backdrop-blur-sm p-6 rounded-2xl border border-white/20 shadow-lg">
               <motion.div
                 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2"
                 animate={
@@ -286,9 +287,9 @@ export default function MetricsSection() {
                     ? {
                         // color: ["#1f2937", "#10b981", "#3b82f6", "#1f2937"],
                         textShadow: [
-                          "0 0 0px rgba(16,185,129,0)",
-                          "0 0 10px rgba(16,185,129,0.5)",
-                          "0 0 0px rgba(16,185,129,0)",
+                          // "0 0 0px rgba(16,185,129,0)",
+                          // "0 0 10px rgba(16,185,129,0.5)",
+                          // "0 0 0px rgba(16,185,129,0)",
                         ],
                       }
                     : {}

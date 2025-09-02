@@ -3,8 +3,7 @@
 import type React from "react"
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
-import Loader from "@/components/loader"
-import EnhancedLoader from "./enhanced-loader"
+import EnhancedLoad from "./load"
 
 export default function ClientAboutPage({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true)
@@ -12,13 +11,13 @@ export default function ClientAboutPage({ children }: { children: React.ReactNod
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2500)
+    }, 100)
 
     return () => clearTimeout(timer)
   }, [])
 
   if (isLoading) {
-    return <Loader />
+    return <EnhancedLoad />
   }
 
   return (

@@ -48,7 +48,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 via-transparent to-purple-900/30" />
 
       {/* Enhanced Background decorative elements - hidden on mobile */}
-      {!isMobile && (
+      {/* {!isMobile && (
         <>
       <motion.div
         animate={{
@@ -79,36 +79,9 @@ export default function HeroSection() {
           y: { duration: 9, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         className="absolute top-40 right-20 w-16 h-16 bg-purple-400/20 rounded-full opacity-60"
-      />
-      {/* <motion.div
-        animate={{
-          scale: [1, 1.4, 1],
-          opacity: [0.3, 0.7, 0.3],
-          rotate: [0, 180, 360],
-        }}
-        transition={{
-          duration: 3,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut",
-        }}
-        className="absolute bottom-32 left-1/4 w-12 h-12 bg-green-400/20 rounded-full"
-      /> */}
-      {/* <motion.div
-        animate={{
-          y: [0, -30, 0],
-          x: [0, 20, 0],
-          rotate: [0, 90, 0],
-          scale: [1, 1.1, 1],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut",
-        }}
-        className="absolute top-60 right-1/4 w-8 h-8 bg-yellow-400/20 rounded-full opacity-70"
-      /> */}
+      /> 
       </>
-      )}
+      )} */}
 
       <div className="container mx-auto text-center max-w-4xl relative z-10">
         <motion.div
@@ -118,11 +91,10 @@ export default function HeroSection() {
                   className="mb-6"
                 >
                   <motion.div
-                    animate={{ rotate: [0, 10, -10, 0] }}
                     transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
                     
                   >
-                    <Sparkles className="w-8 h-8 text-blue-600 mx-auto mb-4 z-auto" />
+                    <Sparkles className="w-8 h-8 text-[#7C3BED] mx-auto mb-4 z-auto" />
                   </motion.div>
                 </motion.div>
          <motion.h1
@@ -148,7 +120,8 @@ export default function HeroSection() {
               ease: "linear",
             }}
             style={{
-              background: "linear-gradient(90deg, #1f2937, #3b82f6, #8b5cf6, #1f2937)",
+              background: "#7C3BED",
+              // background: "linear-gradient(90deg, #1f2937, #3b82f6, #8b5cf6, #7C3BED)",
               backgroundSize: "300% 100%",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -163,7 +136,7 @@ export default function HeroSection() {
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{ delay: 1.2, duration: 0.8 }}
-              className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600 leading-tight origin-left"
+              className="absolute bottom-0 left-0 right-0 h-1 bg-[#7C3BED] leading-tight origin-left"
             />
           </motion.span>
           <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0 }} className="leading-tight md:leading-normal">
