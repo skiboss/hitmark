@@ -43,7 +43,7 @@ export default function CoreServicesSection() {
   return (
     <section ref={ref} className="py-20 px-4 bg-gray-50 relative overflow-hidden">
       {/* Background animated elements */}
-      <motion.div
+      {/* <motion.div
         animate={{
           rotate: 360,
           scale: [1, 1.1, 1],
@@ -53,7 +53,7 @@ export default function CoreServicesSection() {
           scale: { duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         className="absolute top-20 left-20 w-24 h-24 bg-blue-100 rounded-full opacity-20"
-      />
+      /> */}
 
       <div className="container mx-auto">
         <motion.div
@@ -68,27 +68,27 @@ export default function CoreServicesSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50, rotateX: -15 }}
               animate={isInView ? { opacity: 1, y: 0, rotateX: 0 } : {}}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
               whileHover={{
                 scale: 1.05,
                 rotateY: 10,
                 rotateX: 5,
                 z: 50,
-                boxShadow: "0 25px 50px rgba(0,0,0,0.25)",
+                boxShadow: "0 15px 30px rgba(0,0,0,0.25)",
               }}
-              className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center relative overflow-hidden group"
+              className="bg-white p-8 rounded-2xl shadow-lg border text-center relative overflow-hidden group"
               style={{
                 transformStyle: "preserve-3d",
               }}
             >
               {/* Animated background gradient */}
-              <motion.div
+              {/* <motion.div
                 className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
                 style={{
                   background: `linear-gradient(135deg, ${service.color.replace("bg-", "").replace("-500", "")}, transparent)`,
@@ -101,10 +101,10 @@ export default function CoreServicesSection() {
                   repeat: Number.POSITIVE_INFINITY,
                   ease: "linear",
                 }}
-              />
+              /> */}
 
               {/* Floating particles effect */}
-              <motion.div
+              {/* <motion.div
                 animate={{
                   y: [0, -10, 0],
                   opacity: [0.3, 0.7, 0.3],
@@ -116,7 +116,7 @@ export default function CoreServicesSection() {
                   delay: index * 0.5,
                 }}
                 className="absolute top-4 right-4 w-3 h-3 bg-blue-400 rounded-full"
-              />
+              /> */}
 
               <motion.div
                 whileHover={{
@@ -125,12 +125,12 @@ export default function CoreServicesSection() {
                   // rotateY: 180,
                 }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.4,
                   type: "spring",
                   stiffness: 200,
                 }}
                 // ${service.hoverColor}
-                className={`w-20 h-20  rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10 shadow-lg`}
+                className={`w-20 h-20  rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10 shadow-md`}
                 style={{
                   transformStyle: "preserve-3d",
                 }}
@@ -140,7 +140,7 @@ export default function CoreServicesSection() {
                     // rotate: [0, 360],
                   }}
                   transition={{
-                    duration: 8,
+                    duration: 6,
                     repeat: Number.POSITIVE_INFINITY,
                     ease: "linear",
                   }}
@@ -172,9 +172,9 @@ export default function CoreServicesSection() {
 
               {/* Hover glow effect */}
               <motion.div
-                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-400"
                 style={{
-                  background: `radial-gradient(circle at center, ${service.color.replace("bg-", "").replace("-500", "")}, transparent 70%)`,
+                  background: `radial-gradient(circle at center, ${service.color.replace("bg-", "").replace("-500", "")}, transparent 50%)`,
                 }}
               />
             </motion.div>

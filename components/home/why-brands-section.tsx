@@ -48,7 +48,7 @@ export default function WhyBrandsSection() {
   return (
     <section ref={ref} className="py-20 px-4 bg-gray-50 relative overflow-hidden">
       {/* Animated background elements */}
-      <motion.div
+      {/* <motion.div
         animate={{
           rotate: -360,
           scale: [1, 1.3, 1],
@@ -60,7 +60,7 @@ export default function WhyBrandsSection() {
           x: { duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full opacity-30"
-      />
+      /> */}
 
       <div className="container mx-auto">
         <motion.div
@@ -115,7 +115,7 @@ export default function WhyBrandsSection() {
               }}
             >
               {/* Animated background glow */}
-              <motion.div
+              {/* <motion.div
                 className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
                 animate={{
                   scale: [1, 1.1, 1],
@@ -129,10 +129,10 @@ export default function WhyBrandsSection() {
                 style={{
                   background: `conic-gradient(from 0deg, ${reason.color.replace("bg-", "").replace("-500", "")}, transparent, ${reason.color.replace("bg-", "").replace("-500", "")})`,
                 }}
-              />
+              /> */}
 
               {/* Floating particles */}
-              <motion.div
+              {/* <motion.div
                 animate={{
                   y: [0, -15, 0],
                   opacity: [0.4, 0.8, 0.4],
@@ -145,7 +145,7 @@ export default function WhyBrandsSection() {
                   delay: index * 0.3,
                 }}
                 className="absolute top-2 right-2 w-2 h-2 bg-blue-400 rounded-full"
-              />
+              /> */}
 
               <motion.div
                 whileHover={{
@@ -154,11 +154,11 @@ export default function WhyBrandsSection() {
                   // rotateY: 180,
                 }}
                 transition={{
-                  duration: 0.8,
+                  duration: 0.6,
                   type: "spring",
                   stiffness: 200,
                 }}
-                className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 relative z-10 ${reason.glowColor} drop-shadow-lg`}
+                className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 relative z-10 ${reason.glowColor}`}
                 // shadow-lg
                 style={{
                   transformStyle: "preserve-3d",
@@ -198,16 +198,16 @@ export default function WhyBrandsSection() {
 
               <motion.h3
                 className="text-lg font-bold text-gray-900 mb-3"
-                whileHover={{
-                  scale: 1.05,
-                  color: reason.color.includes("blue")
-                    ? "#3b82f6"
-                    : reason.color.includes("purple")
-                      ? "#8b5cf6"
-                      : reason.color.includes("green")
-                        ? "#10b981"
-                        : "#f59e0b",
-                }}
+                // whileHover={{
+                //   scale: 1.05,
+                //   color: reason.color.includes("blue")
+                //     ? "#3b82f6"
+                //     : reason.color.includes("purple")
+                //       ? "#8b5cf6"
+                //       : reason.color.includes("green")
+                //         ? "#10b981"
+                //         : "#f59e0b",
+                // }}
               >
                 {reason.title}
               </motion.h3>
@@ -216,14 +216,14 @@ export default function WhyBrandsSection() {
               </motion.p>
 
               {/* Border glow effect */}
-              <motion.div
+              {/* <motion.div
                 className="absolute inset-0 rounded-2xl border-2 border-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
                   background: `linear-gradient(45deg, ${reason.color.replace("bg-", "").replace("-500", "")}, transparent, ${reason.color.replace("bg-", "").replace("-500", "")}) border-box`,
                   WebkitMask: "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
                   WebkitMaskComposite: "exclude",
                 }}
-              />
+              /> */}
             </motion.div>
           ))}
         </div>
