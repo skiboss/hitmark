@@ -11,7 +11,7 @@ export default function ReadyToScaleSection() {
   return (
     <section ref={ref} className="py-20 px-4 bg-[#FAFAFA] relative overflow-hidden">
       {/* Background decorative elements */}
-      <motion.div
+      {/* <motion.div
         animate={{
           rotate: 360,
           scale: [1, 1.2, 1],
@@ -21,7 +21,7 @@ export default function ReadyToScaleSection() {
           scale: { duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         className="absolute top-10 right-10 w-32 h-32 bg-purple-200 rounded-full opacity-30"
-      />
+      /> */}
       <motion.div
         animate={{
           rotate: -360,
