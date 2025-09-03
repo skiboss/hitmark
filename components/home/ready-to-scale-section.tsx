@@ -22,7 +22,7 @@ export default function ReadyToScaleSection() {
         }}
         className="absolute top-10 right-10 w-32 h-32 bg-purple-200 rounded-full opacity-30"
       /> */}
-      <motion.div
+      {/* <motion.div
         animate={{
           rotate: -360,
           scale: [1, 1.1, 1],
@@ -32,7 +32,7 @@ export default function ReadyToScaleSection() {
           scale: { duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         className="absolute bottom-10 left-10 w-24 h-24 bg-blue-200 rounded-full opacity-30"
-      />
+      /> */}
       <div className="absolute inset-0 bg-[url('/ready-bg.png')] bg-no-repeat bg-cover" />
       <div className="container mx-auto text-center max-w-4xl  relative z-10">
         <motion.div
