@@ -15,7 +15,7 @@ export default function AboutHeroSection() {
       />
       
       {/* Background decorative blobs */}
-      <motion.div
+      {/* <motion.div
         animate={{
           scale: [1, 1.2, 1],
           rotate: [0, 180, 360],
@@ -27,9 +27,9 @@ export default function AboutHeroSection() {
           ease: "easeInOut",
         }}
         className="absolute top-10 left-10 w-32 h-32 bg-purple-300 rounded-full blur-xl"
-      />
+      /> */}
 
-      <motion.div
+      {/* <motion.div
         animate={{
           scale: [1, 1.3, 1],
           rotate: [360, 180, 0],
@@ -41,9 +41,9 @@ export default function AboutHeroSection() {
           ease: "easeInOut",
         }}
         className="absolute bottom-20 right-20 w-40 h-40 bg-blue-300 rounded-full blur-xl"
-      />
+      /> */}
 
-      <motion.div
+      {/* <motion.div
         animate={{
           scale: [1, 1.1, 1],
           x: [0, 30, 0],
@@ -55,7 +55,7 @@ export default function AboutHeroSection() {
           ease: "easeInOut",
         }}
         className="absolute top-1/2 right-1/4 w-24 h-24 bg-purple-200 rounded-full blur-lg"
-      />
+      /> */}
 
       <div className="container mx-auto text-center max-w-4xl relative z-10">
         <motion.div
@@ -74,7 +74,7 @@ export default function AboutHeroSection() {
               ease: "linear",
             }}
             style={{
-              background: "linear-gradient(90deg, #1f2937, #8b5cf6, #3b82f6, #1f2937)",
+              background: "#7C3BED",
               backgroundSize: "300% 100%",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",

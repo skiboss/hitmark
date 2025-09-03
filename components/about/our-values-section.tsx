@@ -51,7 +51,7 @@ export default function OurValuesSection() {
   return (
     <section ref={ref} className="py-20 px-4 bg-white relative overflow-hidden">
       {/* Background animated elements */}
-      <motion.div
+      {/* <motion.div
         animate={{
           rotate: -360,
           scale: [1, 1.3, 1],
@@ -63,7 +63,7 @@ export default function OurValuesSection() {
           x: { duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-br from-purple-100 to-blue-100 rounded-full opacity-30"
-      />
+      /> */}
 
       <div className="container mx-auto">
         <motion.div
@@ -87,7 +87,7 @@ export default function OurValuesSection() {
               ease: "linear",
             }}
             style={{
-              background: "linear-gradient(90deg, #1f2937, #3b82f6, #8b5cf6, #1f2937)",
+              background: "#7C3BED",
               backgroundSize: "300% 100%",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -127,7 +127,7 @@ export default function OurValuesSection() {
               }}
             >
               {/* Animated background glow */}
-              <motion.div
+              {/* <motion.div
                 className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
                 animate={{
                   scale: [1, 1.1, 1],
@@ -141,10 +141,10 @@ export default function OurValuesSection() {
                 style={{
                   background: `conic-gradient(from 0deg, ${value.color.replace("bg-", "").replace("-500", "")}, transparent, ${value.color.replace("bg-", "").replace("-500", "")})`,
                 }}
-              />
+              /> */}
 
               {/* Floating particles */}
-              <motion.div
+              {/* <motion.div
                 animate={{
                   y: [0, -15, 0],
                   opacity: [0.4, 0.8, 0.4],
@@ -157,16 +157,16 @@ export default function OurValuesSection() {
                   delay: index * 0.3,
                 }}
                 className="absolute top-2 right-2 w-2 h-2 bg-blue-400 rounded-full"
-              />
+              /> */}
 
               <motion.div
                 whileHover={{
                 //   rotate: [0, 360],
                   scale: 1.2,
-                  rotateY: 180,
+                  // rotateY: 180,
                 }}
                 transition={{
-                  duration: 0.8,
+                  duration: 0.6,
                   type: "spring",
                   stiffness: 200,
                 }}
@@ -227,14 +227,14 @@ export default function OurValuesSection() {
               </motion.p>
 
               {/* Border glow effect */}
-              <motion.div
+              {/* <motion.div
                 className="absolute inset-0 rounded-2xl border-2 border-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
                   background: `linear-gradient(45deg, ${value.color.replace("bg-", "").replace("-500", "")}, transparent, ${value.color.replace("bg-", "").replace("-500", "")}) border-box`,
                   WebkitMask: "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
                   WebkitMaskComposite: "exclude",
                 }}
-              />
+              /> */}
             </motion.div>
           ))}
         </div>
