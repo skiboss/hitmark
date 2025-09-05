@@ -101,12 +101,12 @@ export default function ServiceProcessSection() {
               </ul>
 
               {/* Hover glow effect */}
-              <motion.div
+              {/* <motion.div
                 className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-300"
                 style={{
                   background: `radial-gradient(circle at center, ${step.color.replace("bg-", "").replace("-500", "")}, transparent 70%)`,
                 }}
-              />
+              /> */}
             </motion.div>
           ))}
         </div>

@@ -22,7 +22,7 @@ export default function ServicesHeroSection() {
       />
       
       {/* Background decorative elements */}
-      <motion.div
+      {/* <motion.div
         animate={{
           rotate: 360,
           scale: [1, 1.2, 1],
@@ -34,9 +34,9 @@ export default function ServicesHeroSection() {
           x: { duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         className="absolute top-20 left-10 w-24 h-24 bg-blue-200 rounded-full opacity-30"
-      />
+      /> */}
 
-      <motion.div
+      {/* <motion.div
         animate={{
           rotate: -360,
           scale: [1, 1.3, 1],
@@ -48,7 +48,7 @@ export default function ServicesHeroSection() {
           y: { duration: 7, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         className="absolute bottom-20 right-20 w-32 h-32 bg-purple-200 rounded-full opacity-30"
-      />
+      /> */}
 
       <div className="container mx-auto text-center max-w-5xl relative z-10">
         <motion.div
@@ -67,7 +67,7 @@ export default function ServicesHeroSection() {
               ease: "linear",
             }}
             style={{
-              background: "linear-gradient(90deg, #1f2937, #3b82f6, #8b5cf6, #1f2937)",
+              background: "#7C3BED",
               backgroundSize: "300% 100%",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",

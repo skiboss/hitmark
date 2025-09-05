@@ -10,7 +10,7 @@ import ClientServicesPage from "@/components/client-services-page"
 export default function ServicesPage() {
   return (
     <ClientServicesPage>
-      <EnhancedBackground />
+      {/* <EnhancedBackground /> */}
       <ServicesHeroSection />
       <CoreServicesSection />
       <CaseStudiesSection />

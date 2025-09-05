@@ -180,7 +180,7 @@ export default function CaseStudiesSection() {
   return (
     <section ref={ref} id="case-studies" className="py-20 px-4 bg-gray-50 relative overflow-hidden">
       {/* Background decorative elements */}
-      <motion.div
+      {/* <motion.div
         animate={{
           rotate: -360,
           scale: [1, 1.2, 1],
@@ -190,7 +190,7 @@ export default function CaseStudiesSection() {
           scale: { duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         className="absolute top-20 left-20 w-32 h-32 bg-blue-100 rounded-full opacity-20"
-      />
+      /> */}
 
       <div className="container mx-auto max-w-5xl">
         <motion.div

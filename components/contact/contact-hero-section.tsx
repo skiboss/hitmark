@@ -74,7 +74,8 @@ export default function ContactHeroSection() {
               ease: "linear",
             }}
             style={{
-              background: "linear-gradient(90deg, #1f2937, #8b5cf6, #3b82f6, #1f2937)",
+              background: "#7C3BED",
+              // background: "linear-gradient(90deg, #1f2937, #8b5cf6, #3b82f6, #1f2937)",
               backgroundSize: "300% 100%",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",

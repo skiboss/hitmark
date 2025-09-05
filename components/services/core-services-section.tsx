@@ -120,7 +120,7 @@ export default function CoreServicesSection() {
     <>
       <section ref={ref} id="core-services" className="py-20 px-4 bg-gray-50 relative overflow-hidden">
         {/* Background animated elements */}
-        <motion.div
+        {/* <motion.div
           animate={{
             rotate: 360,
             scale: [1, 1.1, 1],
@@ -130,7 +130,7 @@ export default function CoreServicesSection() {
             scale: { duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
           }}
           className="absolute top-20 right-20 w-24 h-24 bg-blue-100 rounded-full opacity-20"
-        />
+        /> */}
 
         <div className="container mx-auto max-w-4xl">
           <motion.div
@@ -163,7 +163,7 @@ export default function CoreServicesSection() {
                 onClick={() => openModal(index)}
               >
                 {/* Animated background gradient */}
-                <motion.div
+                {/* <motion.div
                   className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-300"
                   style={{
                     background: `linear-gradient(135deg, ${service.color.replace("bg-", "").replace("-500", "")}, transparent)`,
@@ -176,7 +176,7 @@ export default function CoreServicesSection() {
                     repeat: Number.POSITIVE_INFINITY,
                     ease: "linear",
                   }}
-                />
+                /> */}
 
                 <div className="flex items-start space-x-6 relative z-10">
                   <motion.div
