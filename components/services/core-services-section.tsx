@@ -159,7 +159,7 @@ export default function CoreServicesSection() {
                   scale: 1.02,
                   boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
                 }}
-                className="bg-white p-8 rounded-3xl border border-gray-100 relative overflow-hidden group cursor-pointer"
+                className="bg-white p-8 rounded-3xl border border-gray-600 relative overflow-hidden group cursor-pointer"
                 onClick={() => openModal(index)}
               >
                 {/* Animated background gradient */}
@@ -220,12 +220,12 @@ export default function CoreServicesSection() {
                 </div>
 
                 {/* Hover glow effect */}
-                <motion.div
+                {/* <motion.div
                   className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"
                   style={{
                     background: `radial-gradient(circle at center, ${service.color.replace("bg-", "").replace("-500", "")}, transparent 70%)`,
                   }}
-                />
+                /> */}
               </motion.div>
             ))}
           </div>

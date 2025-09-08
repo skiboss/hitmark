@@ -19,7 +19,7 @@ export default function ContactInfoSection() {
     {
       icon: Phone,
       title: "Call Us",
-      details: "+1 (555) 123-4567",
+      details: "+1 (832) 781-9909",
       description: "Mon-Fri from 8am to 5pm",
       color: "bg-green-500",
     },

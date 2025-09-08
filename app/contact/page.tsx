@@ -8,7 +8,7 @@ import ClientContactPage from "@/components/client-contact-page"
 export default function ContactPage() {
   return (
     <ClientContactPage>
-      <EnhancedBackground />
+      {/* <EnhancedBackground /> */}
       <ContactHeroSection />
       <ContactFormSection />
       <ContactInfoSection />
