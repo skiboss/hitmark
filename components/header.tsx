@@ -56,7 +56,7 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto p-2 md:px-16 md:py-4">
+      <div className="container mx-auto p-2 md:px-16 md:py-5 md:pt-6">
         <div className="flex items-center justify-between px-4 md:px-12">
           <Link href="/" className="flex items-center">
             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">

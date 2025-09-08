@@ -13,9 +13,9 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 py-10 px-4 relative">
       <div className="container mx-auto max-w-7xl ">
-        <div className="flex flex-col md:flex-row justify-evenly items-start md:items-center mb-8">
+        <div className="flex flex-col md:flex-row justify-evenly items-center text-center md:text-left md:items-center mb-8">
           <div className="mb-6 md:mb-0">
-            <div className="mb-4">
+            <div className="mb-4 flex justify-center md:justify-start">
               <img src="/hitmark-logo.png" alt="Hitmark Logo" className="" />
             </div>
             <p className="text-base text-gray-600 mb-4 sm:mb-8 max-w-xs">Built for founders. Powered by experts.</p>
@@ -27,16 +27,16 @@ export default function Footer() {
               <p className="font-medium">admin@hitmark.com</p>
             </div>
 
-            <div className="flex space-x-4 mt-4">
+            <div className="flex justify-center md:justify-start space-x-4 mt-4">
               <motion.a href="https://www.instagram.com/hitmarkdigital?igsh=MWUyb3J3YWY2cGwzNQ==" whileHover={{ scale: 1.5 }} className="text-purple-600 hover:text-purple-700">
                 <Instagram className="w-5 h-5" />
               </motion.a>
-              <motion.a href="#" whileHover={{ scale: 1.5 }} className="text-blue-400 hover:text-blue-500">
+              {/* <motion.a href="#" whileHover={{ scale: 1.5 }} className="text-blue-400 hover:text-blue-500 ">
                 <Twitter className="w-5 h-5" />
               </motion.a>
-              <motion.a href="#" whileHover={{ scale: 1.5 }} className="text-blue-600 hover:text-blue-700">
-                <Linkedin className="w-5 h-5" />
-              </motion.a>
+              <motion.a href="#" whileHover={{ scale: 1.5 }} className="text-blue-600 hover:text-blue-700" >
+                <Linkedin className="w-5 h-5"/>
+              </motion.a> */}
             </div>
           </div>
 
@@ -125,7 +125,7 @@ export default function Footer() {
               onClick={scrollToTop}
               variant="outline"
               size="sm"
-              className="rounded-full p-3 mb-2 border-purple-200 hover:bg-purple-50 bg-transparent"
+              className="rounded-full p-3 mb-2 mt-5 border-purple-200 hover:bg-purple-50 bg-transparent"
             >
               <ArrowUp className="w-4 h-4 text-purple-600" />
             </Button>
