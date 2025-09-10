@@ -180,10 +180,10 @@ export default function CoreServicesSection() {
 
                 <div className="flex items-start space-x-6 relative z-10">
                   <motion.div
-                    whileHover={{
+                    // whileHover={{
                       // rotate: 360,
-                      scale: 1.1,
-                    }}
+                      // scale: 1.1,
+                    // }}
                     transition={{
                       duration: 0.6,
                       type: "spring",
