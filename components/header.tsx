@@ -145,7 +145,7 @@ export default function Header() {
                     </nav>
                     <Button
                     asChild
-                    className="hidden sm:inline-flex bg-white text-gray-800 border-upgrow-purple border-2 rounded-none hover:bg-upgrow-purple-dark font-medium px-3 sm:px-6 py-3 text-sm"
+                    className="hidden sm:inline-flex bg-white text-gray-800 border-upgrow-purple border-2 rounded-md hover:bg-upgrow-purple-dark font-medium px-3 sm:px-5 py-3 text-sm"
                   >
                     <Link href="https://calendly.com/hitmarkdigital">Book Strategy Call</Link>
                   </Button>
