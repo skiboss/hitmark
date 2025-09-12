@@ -21,6 +21,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const isMobile = useMediaQuery("(max-width: 768px)")
 
   const navItems = [
@@ -83,44 +84,44 @@ export default function Header() {
 
           {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-                      <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
-                          <Button
-                            variant="ghost"
-                            className="flex items-center gap-1 text-sm xl:text-base font-medium hover:text-upgrow-purple transition-colors px-2 xl:px-3"
-                          >
-                            What We Do <ChevronDown className="h-4 w-4" />
-                          </Button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent align="start" className="w-56 bg-white">
-                          <DropdownMenuItem className="text-base py-3">
-                            <Link href="/services#media" className="w-full">
-                              Media Buying
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem className="text-base py-3">
-                            <Link href="/services#seo" className="w-full">
-                              Performance SEO
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem className="text-base py-3">
-                            <Link href="/services#ai" className="w-full">
-                              AI Lead Generation
-                            </Link>
-                          </DropdownMenuItem>
-                          {/* <DropdownMenuItem className="text-base py-3">
+  <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
+    <DropdownMenuTrigger asChild>
+      <Button
+        variant="ghost"
+        className="flex items-center gap-1 text-sm xl:text-base font-medium hover:text-upgrow-purple transition-colors px-2 xl:px-3"
+      >
+        What We Do <ChevronDown className="h-4 w-4" />
+      </Button>
+    </DropdownMenuTrigger>
+    <DropdownMenuContent align="start" className="w-56 bg-white">
+      <DropdownMenuItem className="text-base py-3" onClick={() => setIsDropdownOpen(false)}>
+        <Link href="/services#media" className="w-full">
+          Media Buying
+        </Link>
+      </DropdownMenuItem>
+      <DropdownMenuItem className="text-base py-3" onClick={() => setIsDropdownOpen(false)}>
+        <Link href="/services#seo" className="w-full">
+          Performance SEO
+        </Link>
+      </DropdownMenuItem>
+      <DropdownMenuItem className="text-base py-3" onClick={() => setIsDropdownOpen(false)}>
+        <Link href="/services#ai" className="w-full">
+          AI Lead Generation
+        </Link>
+      </DropdownMenuItem>
+      {/* <DropdownMenuItem className="text-base py-3">
                             <Link href="/services/marketing-strategy" className="w-full">
                               Marketing Strategy
                             </Link>
                           </DropdownMenuItem> */}
-                          <DropdownMenuSeparator />
-                          <DropdownMenuItem className="text-base py-3 font-medium">
-                            <Link href="/services" className="w-full">
-                              All Services
-                            </Link>
-                          </DropdownMenuItem>
-                        </DropdownMenuContent>
-                      </DropdownMenu>
+      <DropdownMenuSeparator />
+      <DropdownMenuItem className="text-base py-3 font-medium" onClick={() => setIsDropdownOpen(false)}>
+        <Link href="/services" className="w-full">
+          All Services
+        </Link>
+      </DropdownMenuItem>
+    </DropdownMenuContent>
+  </DropdownMenu>
           
                       <Link
                         href="/services#case-studies"
@@ -219,28 +220,28 @@ export default function Header() {
                     <h3 className="font-semibold text-upgrow-purple text-base">What We Do</h3>
                     <div className="pl-4 space-y-3">
                       <Link
-                        href="/services/seo"
+                        href="/services#seo"
                         className="block py-2 text-gray-700 dark:text-gray-300 hover:text-upgrow-purple transition-colors text-sm"
                         onClick={() => setIsOpen(false)}
                       >
                         Performance SEO
                       </Link>
                       <Link
-                        href="/services/paid-media"
+                        href="/services#media"
                         className="block py-2 text-gray-700 dark:text-gray-300 hover:text-upgrow-purple transition-colors text-sm"
                         onClick={() => setIsOpen(false)}
                       >
-                        Paid Media
+                        Media Buying
                       </Link>
                       <Link
-                        href="/services/content-marketing"
+                        href="/services#ai"
                         className="block py-2 text-gray-700 dark:text-gray-300 hover:text-upgrow-purple transition-colors text-sm"
                         onClick={() => setIsOpen(false)}
                       >
-                        Content Marketing
+                        AI Lead Generation
                       </Link>
                       <Link
-                        href="/what-we-do"
+                        href="/services"
                         className="block py-2 font-medium text-gray-900 dark:text-gray-100 hover:text-upgrow-purple transition-colors text-sm"
                         onClick={() => setIsOpen(false)}
                       >
@@ -251,7 +252,7 @@ export default function Header() {
 
                   {/* Case Studies */}
                   <Link
-                    href="/case-studies"
+                    href="/services#case-studies"
                     className="block py-3 font-medium text-gray-900 dark:text-gray-100 hover:text-upgrow-purple transition-colors border-b border-gray-100 dark:border-gray-800"
                     onClick={() => setIsOpen(false)}
                   >
@@ -268,21 +269,7 @@ export default function Header() {
                         onClick={() => setIsOpen(false)}
                       >
                         Our Story
-                      </Link>
-                      <Link
-                        href="/team"
-                        className="block py-2 text-gray-700 dark:text-gray-300 hover:text-upgrow-purple transition-colors text-sm"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Meet the Team
-                      </Link>
-                      <Link
-                        href="/careers"
-                        className="block py-2 text-gray-700 dark:text-gray-300 hover:text-upgrow-purple transition-colors text-sm"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Careers
-                      </Link>
+                      </Link>                     
                       <Link
                         href="/contact"
                         className="block py-2 text-gray-700 dark:text-gray-300 hover:text-upgrow-purple transition-colors text-sm"
@@ -293,64 +280,18 @@ export default function Header() {
                     </div>
                   </div>
 
-                  {/* Learn Section */}
-                  {/* <div className="space-y-3">
-                    <h3 className="font-semibold text-upgrow-purple text-base">Learn</h3>
-                    <div className="pl-4 space-y-3">
-                      <Link
-                        href="/blog"
-                        className="block py-2 text-gray-700 dark:text-gray-300 hover:text-upgrow-purple transition-colors text-sm"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Blog
-                      </Link>
-                      <Link
-                        href="/resources"
-                        className="block py-2 text-gray-700 dark:text-gray-300 hover:text-upgrow-purple transition-colors text-sm"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Resources
-                      </Link>
-                      <Link
-                        href="/webinars"
-                        className="block py-2 text-gray-700 dark:text-gray-300 hover:text-upgrow-purple transition-colors text-sm"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Webinars
-                      </Link>
-                    </div>
-                  </div> */}
-
-                  {/* Pricing */}
-                  {/* <Link
-                    href="/pricing"
-                    className="block py-3 font-medium text-gray-900 dark:text-gray-100 hover:text-upgrow-purple transition-colors border-b border-gray-100 dark:border-gray-800"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Pricing
-                  </Link> */}
+                  
                   {/* CTA Button */}
                 <div className="pt-6 border-t border-gray-200 pb-6">
                   <Button
                     asChild
-                    className="w-full bg-white text-upgrow-purple border-upgrow-purple border-2 hover:bg-upgrow-purple-dark font-medium py-3"
+                    className="w-full bg-white text-upgrow-purple border-upgrow-purple border -2 hover:bg-upgrow-purple-dark font-medium py-3"
                     onClick={() => setIsOpen(false)}
                   >
-                    <Link href="/book-strategy-call">Book Strategy Call</Link>
+                    <Link href="https://calendly.com/hitmarkdigital">Book Strategy Call</Link>
                   </Button>
                 </div>
                 </nav>
-
-                {/* CTA Button */}
-                {/* <div className="pt-6 border-t border-gray-200 pb-6">
-                  <Button
-                    asChild
-                    className="w-full bg-white text-upgrow-purple border-upgrow-purple border-2 hover:bg-upgrow-purple-dark text-white font-medium py-3"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    <Link href="/book-strategy-call">Book Strategy Call</Link>
-                  </Button>
-                </div> */}
               </div>
             </SheetContent>
           </Sheet>

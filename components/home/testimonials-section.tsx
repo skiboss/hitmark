@@ -248,7 +248,9 @@ export default function TestimonialsSection() {
             <motion.div
               className="flex transition-transform duration-700 ease-in-out"
               animate={{
-                x: `-${currentIndex * (100 / 3)}%`,
+                x: typeof window !== "undefined" && window.innerWidth < 768
+                  ? `-${currentIndex * 100}%`
+                  : `-${currentIndex * (100 / 3)}%`,
               }}
               transition={{
                 type: "spring",
@@ -259,7 +261,7 @@ export default function TestimonialsSection() {
               {testimonials.map((testimonial, index) => (
                 <motion.div
                   key={index}
-                  className="flex-shrink-0 w-1/3 px-2"
+                  className="flex-shrink-0 md:w-1/3 w-full px-2"
                   initial={{ opacity: 0, y: 50 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -271,12 +273,6 @@ export default function TestimonialsSection() {
                       ))}
                     </div>
                     <p className="text-gray-600 mb-4 text-sm leading-relaxed">"{testimonial.content}"</p>
-
-                    {/* Results Badge */}
-                    {/* <div className="inline-block bg-gradient-to-r from-purple-500 to-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold mb-4">
-                      {testimonial.results}
-                    </div> */}
-
                     <div className="flex items-center space-x-3">
                       <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
                         {testimonial.avatar}
@@ -284,7 +280,8 @@ export default function TestimonialsSection() {
                       <div>
                         <p className="font-semibold text-gray-900 text-sm">{testimonial.name}</p>
                         <p className="text-gray-500 text-xs">{testimonial.role},  
-                        <span className="text-blue-600 text-xs font-medium"> {testimonial.company}</span></p>
+                          <span className="text-blue-600 text-xs font-medium"> {testimonial.company}</span>
+                        </p>
                       </div>
                     </div>
                   </div>

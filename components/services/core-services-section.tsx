@@ -3,7 +3,7 @@
 import React from "react"
 
 import { motion, useInView } from "framer-motion"
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Megaphone, TrendingUp, Brain, ArrowRight, X } from "lucide-react"
 
@@ -11,6 +11,23 @@ export default function CoreServicesSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [selectedService, setSelectedService] = useState<number | null>(null)
+
+  // useEffect(() => {
+  //   const scrollToHash = () => {
+  //     if (window.location.hash) {
+  //       const id = window.location.hash.replace("#", "")
+  //       const el = document.getElementById(id)
+  //       if (el) {
+  //         const yOffset = -100 // Adjust this value to match your navbar height
+  //         const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset
+  //         window.scrollTo({ top: y, behavior: "smooth" })
+  //       }
+  //     }
+  //   }
+  //   window.addEventListener("hashchange", scrollToHash)
+  //   scrollToHash()
+  //   return () => window.removeEventListener("hashchange", scrollToHash)
+  // }, [])
 
   const services = [
     {

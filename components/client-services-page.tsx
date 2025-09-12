@@ -17,6 +17,28 @@ export default function ClientServicesPage({ children }: { children: React.React
     return () => clearTimeout(timer)
   }, [])
 
+  useEffect(() => {
+    if (!isLoading) {
+      const scrollToHash = () => {
+        if (window.location.hash) {
+          const id = window.location.hash.replace("#", "")
+          const el = document.getElementById(id)
+          if (el) {
+            const yOffset = -170 // Adjust this value to match your navbar height
+            const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset
+            window.scrollTo({ top: y, behavior: "smooth" })
+          }
+        }
+      };
+      window.addEventListener("hashchange", scrollToHash);
+      // Increase delay to ensure DOM and navbar are rendered
+      setTimeout(() => {
+        scrollToHash();
+      }, 300);
+      return () => window.removeEventListener("hashchange", scrollToHash);
+    }
+  }, [isLoading])
+
   if (isLoading) {
     return <EnhancedLoad />
   }
@@ -28,7 +50,7 @@ export default function ClientServicesPage({ children }: { children: React.React
       transition={{ duration: 0.5 }}
       className="min-h-screen bg-white"
     >
-      {children}
+      <div>{children}</div>
     </motion.div>
   )
 }
