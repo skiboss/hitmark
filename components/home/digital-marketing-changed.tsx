@@ -1,7 +1,6 @@
 "use client"
 
-import { motion, useInView } from "framer-motion"
-import { Search, Share2, Sparkles, Target, Zap } from "lucide-react"
+import { Sparkles } from "lucide-react"
 import Image from "next/image"
 
 export default function DigitalMarketingChanged() {

@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react"
+import Link from "next/link"
 
 export default function ContactInfoSection() {
   const ref = useRef(null)
@@ -12,7 +13,7 @@ export default function ContactInfoSection() {
     {
       icon: Mail,
       title: "Email Us",
-      details: "hello@hitmarkdigital.com",
+      details: "support@hitmarkdigital.com",
       description: "Send us an email anytime",
       color: "bg-blue-500",
     },
@@ -68,7 +69,7 @@ export default function ContactInfoSection() {
               className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 text-center relative overflow-hidden group"
             >
               <motion.div
-                whileHover={{ rotate: 360, scale: 1.1 }}
+                // whileHover={{ rotate: 360, scale: 1.1 }}
                 transition={{ duration: 0.5 }}
                 className={`w-16 h-16 ${info.color} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg`}
               >
@@ -76,16 +77,16 @@ export default function ContactInfoSection() {
               </motion.div>
 
               <h3 className="text-lg font-bold text-gray-900 mb-2">{info.title}</h3>
-              <p className="text-gray-900 font-semibold mb-1">{info.details}</p>
+              {info.details === "support@hitmarkdigital.com" ? <Link className="text-gray-900 font-semibold mb-1" href='mailto:support@hitmarkdigital.com'>{info.details}</Link> : <p className="text-gray-900 font-semibold mb-1">{info.details}</p>}
               <p className="text-gray-600 text-sm">{info.description}</p>
 
               {/* Hover glow effect */}
-              <motion.div
-                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+              {/* <motion.div
+                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-200"
                 style={{
-                  background: `radial-gradient(circle at center, ${info.color.replace("bg-", "").replace("-500", "")}, transparent 70%)`,
+                  background: `radial-gradient(circle at center, ${info.color.replace("bg-", "").replace("-500", "")}, transparent 60%)`,
                 }}
-              />
+              /> */}
             </motion.div>
           ))}
         </div>
