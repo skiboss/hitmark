@@ -24,7 +24,7 @@ export default function Footer() {
               <p>6220 Westpark Drive Suite 149-B107</p>
               <p>Houston TX 77057, United States</p>
               <p className="font-medium pt-4">+1 (832) 781-9909</p>
-              <p className="font-medium">admin@hitmark.com</p>
+              <p className="font-medium">support@hitmark.com</p>
             </div>
 
             <div className="flex justify-center md:justify-start space-x-4 mt-4">
