@@ -36,7 +36,7 @@ export default function ContactFormSection() {
   })
 
   const [errors, setErrors] = useState<FormErrors>({})
-  const [isSubmitting, setIsSubmitting] = useState(true)
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   const validateForm = (): boolean => {
