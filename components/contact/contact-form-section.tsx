@@ -36,7 +36,7 @@ export default function ContactFormSection() {
   })
 
   const [errors, setErrors] = useState<FormErrors>({})
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(true)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   const validateForm = (): boolean => {
@@ -265,7 +265,7 @@ export default function ContactFormSection() {
                   >
                     {isSubmitting ? (
                       <motion.div
-                        animate={{ rotate: 360 }}
+                        animate={{ rotateX: 360 }}
                         transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
                         className="flex items-center justify-center gap-2"
                       >

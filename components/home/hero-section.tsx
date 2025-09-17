@@ -1,35 +1,36 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { useEffect, useState } from "react"
-import { useMediaQuery } from "@/hooks/use-media-query"
-import { Sparkles } from "lucide-react"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "@/hooks/use-media-query";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function HeroSection() {
-  const [displayedText, setDisplayedText] = useState("")
-  const fullText = "Scale your Brand with Precision Marketing that hits the mark"
-  const [showCursor, setShowCursor] = useState(true)
-    const isMobile = useMediaQuery("(max-width: 768px)")
+  const [displayedText, setDisplayedText] = useState("");
+  const fullText =
+    "Scale your Brand with Precision Marketing that hits the mark";
+  const [showCursor, setShowCursor] = useState(true);
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
-    let index = 0
+    let index = 0;
     const timer = setInterval(
       () => {
-      if (index <= fullText.length) {
-        setDisplayedText(fullText.slice(0, index))
-        index++
-      } else {
-        clearInterval(timer)
-        // Hide cursor after 1 second delay
-        setTimeout(() => setShowCursor(false), 1000)
-      }
-    },
-      isMobile ? 30 : 50,
-    ) // Faster typing on mobile
+        if (index <= fullText.length) {
+          setDisplayedText(fullText.slice(0, index));
+          index++;
+        } else {
+          clearInterval(timer);
+          // Hide cursor after 1 second delay
+          setTimeout(() => setShowCursor(false), 1000);
+        }
+      },
+      isMobile ? 30 : 50
+    ); // Faster typing on mobile
 
-    return () => clearInterval(timer)
-  }, [fullText, isMobile])
+    return () => clearInterval(timer);
+  }, [fullText, isMobile]);
 
   return (
     <section className="py-20 px-4 relative overflow-hidden min-h-screen flex items-center">
@@ -85,33 +86,41 @@ export default function HeroSection() {
 
       <div className="container mx-auto text-center max-w-4xl relative z-10">
         <motion.div
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  className="mb-6"
-                >
-                  <motion.div
-                    transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                    
-                  >
-                    <Sparkles className="w-8 h-8 text-[#7C3BED] mx-auto mb-4 z-auto" />
-                  </motion.div>
-                </motion.div>
-         <motion.h1
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-6"
+        >
+          <motion.div
+            transition={{
+              duration: 5,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "easeInOut",
+            }}
+          >
+            <Sparkles className="w-8 h-8 text-[#7C3BED] mx-auto mb-4 z-auto" />
+          </motion.div>
+        </motion.div>
+        <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-4xl leading-normal md:leading-normal md:text-6xl font-semibold text-gray-900 mb-6"
         >
-          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
-            Scale your Brand with{" "} 
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+          >
+            Scale your Brand with{" "}
           </motion.span>
           <motion.span
             // initial={{ opacity: 0, scale: 0.8 }}
             className="text-4xl md:text-6xl font-semibold text-gray-900 leading-normal md:leading-normal py-2 relative"
             animate={{
               backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-              opacity: 1, scale: 1,
+              opacity: 1,
+              scale: 1,
             }}
             transition={{
               delay: 0.8,
@@ -139,7 +148,12 @@ export default function HeroSection() {
               className="absolute bottom-0 left-0 right-0 h-1 bg-[#7C3BED] leading-tight origin-left"
             />
           </motion.span>
-          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0 }} className="leading-tight md:leading-normal">
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.0 }}
+            className="leading-tight md:leading-normal"
+          >
             {" "}
             that hits the mark
           </motion.span>
@@ -150,11 +164,14 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
           className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
-          style={{
-            // textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
-          }}
+          style={
+            {
+              // textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
+            }
+          }
         >
-          Turn Clicks Into Customers With Tailored Marketing Solutions That Deliver Real Results
+          Turn Clicks Into Customers With Tailored Marketing Solutions That
+          Deliver Real Results
         </motion.p>
 
         <motion.div
@@ -171,14 +188,22 @@ export default function HeroSection() {
           >
             <Button
               size={isMobile ? "default" : "lg"}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-2 md:py-4 text-base md:text-lg rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 relative overflow-hidden border-2 border-blue-500/20"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 md:px-8 py-2 md:py-4 text-base md:text-lg rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 relative overflow-hidden border-2 border-blue-500/20"
               onClick={() => (window.location.href = "/contact#contact-form")}
             >
-              <span className="relative z-10 font-semibold">Get Your Free Growth Plan</span>
+              <span className="relative z-10 font-semibold">
+                Get Your Free Growth Plan
+              </span>
+              <motion.div
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
+              >
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </motion.div>
             </Button>
           </motion.div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

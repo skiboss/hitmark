@@ -12,7 +12,6 @@ import HowItWorks from "@/components/how-it-works"
 export default function AboutPage() {
   return (
     <ClientAboutPage>
-      {/* <EnhancedBackground /> */}
       <AboutHeroSection />
       <OurStorySection />
       <OurValuesSection />

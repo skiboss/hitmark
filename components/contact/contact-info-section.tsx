@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react"
-import Link from "next/link"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function ContactInfoSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const contactInfo = [
     {
@@ -38,7 +38,7 @@ export default function ContactInfoSection() {
       description: "Weekend support available",
       color: "bg-orange-500",
     },
-  ]
+  ];
 
   return (
     <section ref={ref} className="py-20 px-4 bg-gray-50">
@@ -49,13 +49,16 @@ export default function ContactInfoSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Get In Touch
+          </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ready to grow your business? We're here to help you every step of the way.
+            Ready to grow your business? We're here to help you every step of
+            the way.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {contactInfo.map((info, index) => (
             <motion.div
               key={index}
@@ -75,10 +78,31 @@ export default function ContactInfoSection() {
               >
                 <info.icon className="w-8 h-8 text-white" />
               </motion.div>
-
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{info.title}</h3>
-              {info.details === "support@hitmarkdigital.com" ? <Link className="text-gray-900 font-semibold mb-1" href='mailto:support@hitmarkdigital.com'>{info.details}</Link> : <p className="text-gray-900 font-semibold mb-1">{info.details}</p>}
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                {info.title}
+              </h3>
+              {info.details === "support@hitmarkdigital.com" ? (
+                <Link
+                  className="text-blue-500 font-semibold mb-1"
+                  href="mailto:support@hitmarkdigital.com"
+                >
+                  {info.details}
+                </Link>
+              ) : info.details === "+1 (832) 781-9909" ? (
+                <Link
+                  className="text-blue-500 font-semibold mb-1"
+                  href={`tel:+1 (832) 781-9909`}
+                >
+                  {info.details}
+                </Link>
+              ) : (
+                <p className="text-gray-900 font-semibold mb-1">
+                  {info.details}
+                </p>
+              )}
               <p className="text-gray-600 text-sm">{info.description}</p>
+
+              {/* {info.title === "Call Us" && } */}
 
               {/* Hover glow effect */}
               {/* <motion.div
@@ -115,5 +139,5 @@ export default function ContactInfoSection() {
         </motion.div> */}
       </div>
     </section>
-  )
+  );
 }

@@ -96,7 +96,7 @@ export default function WhyBrandsSection() {
           </motion.h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 max-w-6xl mx-auto">
           {reasons.map((reason, index) => (
             <motion.div
               key={index}
@@ -109,7 +109,7 @@ export default function WhyBrandsSection() {
                 rotateX: 5,
                 z: 50,
               }}
-              className="bg-gray-50 border p-6 rounded-2xl text-center relative overflow-hidden group"
+              className="bg-gray-100 border border-gray-400 p-6 rounded-2xl text-center relative overflow-hidden group"
               style={{
                 transformStyle: "preserve-3d",
               }}

@@ -121,7 +121,7 @@ export default function ServicesHeroSection() {
             >
               <Button
                 size="lg"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-xl"
+                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-xl"
                 onClick={() => (window.location.href = "/contact#contact-form")}
               >
                 Get Your Free Growth Plan

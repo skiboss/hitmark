@@ -62,13 +62,13 @@ export default function CoreServicesSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#7C3BED], mb-4">Our Core Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#7C3BED] mb-4">Our Core Services</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Every Service We Offer, Is Tied Directly To Business Outcomes: Leads, Revenue, And Long-Term Scale.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -82,63 +82,23 @@ export default function CoreServicesSection() {
                 z: 50,
                 boxShadow: "0 15px 30px rgba(0,0,0,0.25)",
               }}
-              className="bg-white p-8 rounded-2xl shadow-lg border text-center relative overflow-hidden group"
+              className="bg-gray-100 p-6 rounded-2xl shadow-lg border border-gray-400 text-center relative overflow-hidden group"
               style={{
                 transformStyle: "preserve-3d",
               }}
             >
-              {/* Animated background gradient */}
-              {/* <motion.div
-                className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                style={{
-                  background: `linear-gradient(135deg, ${service.color.replace("bg-", "").replace("-500", "")}, transparent)`,
-                }}
-                animate={{
-                  rotate: [0, 360],
-                }}
-                transition={{
-                  duration: 20,
-                  repeat: Number.POSITIVE_INFINITY,
-                  ease: "linear",
-                }}
-              /> */}
-
-              {/* Floating particles effect */}
-              {/* <motion.div
-                animate={{
-                  y: [0, -10, 0],
-                  opacity: [0.3, 0.7, 0.3],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Number.POSITIVE_INFINITY,
-                  ease: "easeInOut",
-                  delay: index * 0.5,
-                }}
-                className="absolute top-4 right-4 w-3 h-3 bg-blue-400 rounded-full"
-              /> */}
-
-              <motion.div
-                whileHover={{
-                  // rotate: 360,
-                  // scale: 1.2,
-                  // rotateY: 180,
-                }}
+             <motion.div
                 transition={{
                   duration: 0.4,
                   type: "spring",
                   stiffness: 200,
-                }}
-                // ${service.hoverColor}
-                className={`w-20 h-20  rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10 shadow-md`}
+                }}                
+                className={`w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10 shadow-md`}
                 style={{
                   transformStyle: "preserve-3d",
                 }}
               >
                 <motion.div
-                  animate={{
-                    // rotate: [0, 360],
-                  }}
                   transition={{
                     duration: 6,
                     repeat: Number.POSITIVE_INFINITY,
@@ -146,7 +106,6 @@ export default function CoreServicesSection() {
                   }}
                 >
                   <img src={`/images/${service.imgSrc}.png`} className="w-16 h-16 object-cover" />
-                  {/* <service.icon className="w-10 h-10 text-white" /> */}
                 </motion.div>
               </motion.div>
 

@@ -44,7 +44,7 @@ export default function HowItWorks() {
   };
 
   return (
-    <div className="py-16 px-4 max-w-6xl mx-auto">
+    <div className="py-12 px-4 max-w-6xl mx-auto">
       {/* Header */}
       <div className="text-center mb-12">
         <div className="inline-block bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
@@ -115,7 +115,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Right Panel - Team Image */}
-        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-lg overflow-hidden">
+        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-md overflow-hidden">
           <div className="h-full flex items-center justify-center p-2">
             <div className="relative">
               <img

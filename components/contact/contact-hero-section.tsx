@@ -15,7 +15,7 @@ export default function ContactHeroSection() {
       />
       
       {/* Background decorative blobs */}
-      <motion.div
+      {/* <motion.div
         animate={{
           scale: [1, 1.2, 1],
           rotate: [0, 180, 360],
@@ -27,7 +27,7 @@ export default function ContactHeroSection() {
           ease: "easeInOut",
         }}
         className="absolute top-10 left-10 w-32 h-32 bg-purple-300 rounded-full blur-xl"
-      />
+      /> */}
 
       <motion.div
         animate={{
@@ -102,7 +102,6 @@ export default function ContactHeroSection() {
             <motion.div
               whileHover={{
                 scale: 1.05,
-                // boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
               }}
               whileTap={{ scale: 0.95 }}
             >
