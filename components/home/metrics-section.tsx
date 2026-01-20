@@ -117,9 +117,9 @@ export default function MetricsSection() {
               backgroundClip: "text",
             }}
           >
-            Join over 300 brands across SaaS,
+            Trusted by growing brands in performance-driven industries - including SaaS,
           </motion.h2>
-          <p className="text-3xl md:text-4xl font-bold text-gray-900">eComm, fintech & health care</p>
+          <p className="text-3xl md:text-4xl font-bold text-gray-900">eCommerce, fintech, healthcare, crypto & iGaming.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -188,9 +188,9 @@ export default function MetricsSection() {
                   delay: 0.5,
                 }}
               >
-                <Counter end={6.5} suffix="M" decimal={true} />
+                <Counter end={3.2} suffix="M+" decimal={true} />
               </motion.div>
-              <p className="text-gray-600 font-medium">Ad served</p>
+              <p className="text-gray-600 font-medium">Ads Delivered</p>
             </div>
           </motion.div>
 
@@ -244,9 +244,9 @@ export default function MetricsSection() {
                   delay: 1,
                 }}
               >
-                <Counter end={2.6} suffix="M+" decimal={true} />
+                <Counter end={1.1} suffix="M+" decimal={true} />
               </motion.div>
-              <p className="text-gray-600 font-medium">Revenue generated</p>
+              <p className="text-gray-600 font-medium">Revenue Influenced</p>
             </div>
           </motion.div>
 
@@ -300,7 +300,7 @@ export default function MetricsSection() {
                   delay: 1.5,
                 }}
               >
-                <Counter end={21} suffix="+" />
+                <Counter end={18} suffix="+" />
               </motion.div>
               <p className="text-gray-600 font-medium">Brands Served</p>
             </div>

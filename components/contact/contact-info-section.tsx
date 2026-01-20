@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageCircle, MessageCircle as WhatsAppIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactInfoSection() {
@@ -20,9 +20,16 @@ export default function ContactInfoSection() {
     {
       icon: Phone,
       title: "Call Us",
-      details: "+1 (832) 781-9909",
+      details: "+1 (832) 806-8463",
       description: "Mon-Fri from 8am to 5pm",
       color: "bg-green-500",
+    },
+    {
+      icon: WhatsAppIcon,
+      title: "WhatsApp Us",
+      details: "+1 (832) 806-8463",
+      description: "24 / 7 (always available)",
+      color: "bg-teal-500",
     },
     // {
     //   icon: MapPin,
@@ -88,10 +95,19 @@ export default function ContactInfoSection() {
                 >
                   {info.details}
                 </Link>
-              ) : info.details === "+1 (832) 781-9909" ? (
+              ) : info.details === "+1 (832) 806-8463" ? (
                 <Link
                   className="text-blue-500 font-semibold mb-1"
-                  href={`tel:+1 (832) 781-9909`}
+                  href={`tel:+1 (832) 806-8463`}
+                >
+                  {info.details}
+                </Link>
+              ) : info.title === "WhatsApp Us" ? (
+                <Link
+                  className="text-blue-500 font-semibold mb-1"
+                  href={`https://wa.me/18328068463`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {info.details}
                 </Link>
