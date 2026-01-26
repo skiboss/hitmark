@@ -2,8 +2,9 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Phone, MapPin, Clock, MessageCircle, MessageCircle as WhatsAppIcon } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ContactInfoSection() {
   const ref = useRef(null);
@@ -27,9 +28,10 @@ export default function ContactInfoSection() {
     {
       icon: WhatsAppIcon,
       title: "WhatsApp Us",
-      details: "+1 (832) 806-8463",
+      details: "+1 (346) 871-0080",
       description: "24 / 7 (always available)",
       color: "bg-teal-500",
+      isCustomIcon: true,
     },
     // {
     //   icon: MapPin,
@@ -83,7 +85,17 @@ export default function ContactInfoSection() {
                 transition={{ duration: 0.5 }}
                 className={`w-16 h-16 ${info.color} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg`}
               >
-                <info.icon className="w-8 h-8 text-white" />
+                {info.isCustomIcon ? (
+                  <Image
+                    src="/icons/whatsapp.svg"
+                    alt="WhatsApp"
+                    width={32}
+                    height={32}
+                    className="w-8 h-8"
+                  />
+                ) : (
+                  <info.icon className="w-8 h-8 text-white" />
+                )}
               </motion.div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">
                 {info.title}
@@ -95,17 +107,17 @@ export default function ContactInfoSection() {
                 >
                   {info.details}
                 </Link>
-              ) : info.details === "+1 (832) 806-8463" ? (
+              ) : info.details === "+1 (346) 871-0080" ? (
                 <Link
                   className="text-blue-500 font-semibold mb-1"
-                  href={`tel:+1 (832) 806-8463`}
+                  href={`tel:+1 (346) 871-0080`}
                 >
                   {info.details}
                 </Link>
               ) : info.title === "WhatsApp Us" ? (
                 <Link
                   className="text-blue-500 font-semibold mb-1"
-                  href={`https://wa.me/18328068463`}
+                  href={`https://wa.me/+13468710080`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
