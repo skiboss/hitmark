@@ -26,7 +26,7 @@ export default function ContactInfoSection() {
       color: "bg-green-500",
     },
     {
-      icon: WhatsAppIcon,
+      icon: MessageCircle,
       title: "WhatsApp Us",
       details: "+1 (346) 871-0080",
       description: "24 / 7 (always available)",
@@ -87,14 +87,14 @@ export default function ContactInfoSection() {
               >
                 {info.isCustomIcon ? (
                   <Image
-                    src="/icons/whatsapp.svg"
+                    src="/whatsapp.svg"
                     alt="WhatsApp"
                     width={32}
                     height={32}
                     className="w-8 h-8"
                   />
                 ) : (
-                  <info.icon className="w-8 h-8 text-white" />
+                  <info.icon className="w-8 h-8 text-gray-900" />
                 )}
               </motion.div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">
