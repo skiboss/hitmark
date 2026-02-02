@@ -21,7 +21,7 @@ export default function ContactInfoSection() {
     {
       icon: Phone,
       title: "Call Us",
-      details: "+1 (832) 806-8463",
+      details: "+1 (346) 871-0080",
       description: "Mon-Fri from 8am to 5pm",
       color: "bg-green-500",
     },
@@ -116,10 +116,10 @@ export default function ContactInfoSection() {
                 >
                   {info.details}
                 </Link>
-              ) : info.details === "+1 (832) 806-8463" ? (
+              ) : info.details === "+1 (346) 871-0080" ? (
                 <Link
                   className="text-blue-500 font-semibold mb-1"
-                  href={`tel:+1 (832) 806-8463`}
+                  href={`tel:+1 (346) 871-0080`}
                 >
                   {info.details}
                 </Link>
